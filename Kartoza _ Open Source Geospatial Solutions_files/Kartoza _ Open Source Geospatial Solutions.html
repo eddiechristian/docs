@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019)http://kartoza.com/ -->
+<html class="no-js" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script><script async="" src="./Kartoza _ Open Source Geospatial Solutions_files/"></script>
+				<link rel="profile" href="http://gmpg.org/xfn/11">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Kartoza | Open Source Geospatial Solutions</title>
+		
+				
+<!-- All in One SEO Pack 2.2.7 by Michael Torbert of Semper Fi Web Design[229,284] -->
+<meta name="description" itemprop="description" content="I finally have some time to sit down and write up some thoughts on the QGIS User Conference and Developer Meeting (aka Hackfest) that we just held in Nødebo,">
+
+<meta name="keywords" itemprop="keywords" content="docker,python,qgis">
+<link rel="next" href="http://kartoza.com/page/2/">
+
+<link rel="canonical" href="http://kartoza.com/">
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="Kartoza » Feed" href="http://kartoza.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Kartoza » Comments Feed" href="http://kartoza.com/comments/feed/">
+		<script src="./Kartoza _ Open Source Geospatial Solutions_files/cb=gapi.loaded_2" async=""></script><script src="./Kartoza _ Open Source Geospatial Solutions_files/cb=gapi.loaded_1" async=""></script><script type="text/javascript" async="" src="./Kartoza _ Open Source Geospatial Solutions_files/platform.js" gapi_processed="true"></script><script type="text/javascript" async="" src="./Kartoza _ Open Source Geospatial Solutions_files/platform.js" gapi_processed="true"></script><script src="./Kartoza _ Open Source Geospatial Solutions_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./Kartoza _ Open Source Geospatial Solutions_files/plusone.js" gapi_processed="true"></script><script type="text/javascript" async="" src="./Kartoza _ Open Source Geospatial Solutions_files/ga.js"></script><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/kartoza.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.3"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Kartoza _ Open Source Geospatial Solutions_files/wp-emoji-release.min.js" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="galleria-fs-css" href="./Kartoza _ Open Source Geospatial Solutions_files/galleria-fs-b.css" type="text/css" media="all">
+<link rel="stylesheet" id="magnific-popup-au-css" href="./Kartoza _ Open Source Geospatial Solutions_files/magnific-popup.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="youtube-channel-css" href="./Kartoza _ Open Source Geospatial Solutions_files/youtube-channel.css" type="text/css" media="all">
+<link rel="stylesheet" id="tw-bootstrap-css" href="./Kartoza _ Open Source Geospatial Solutions_files/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="the-bootstrap-css" href="./Kartoza _ Open Source Geospatial Solutions_files/style.min.css" type="text/css" media="all">
+<style id="the-bootstrap-inline-css" type="text/css">
+body > .container{margin-top:68px;}@media(min-width: 980px){body > .container{margin-top:58px;}}
+</style>
+<link rel="stylesheet" id="genericons-css" href="./Kartoza _ Open Source Geospatial Solutions_files/genericons.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="./Kartoza _ Open Source Geospatial Solutions_files/jetpack.css" type="text/css" media="all">
+<!-- This site uses the Google Analytics by Yoast plugin v5.4.2 - Universal disabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-64176861-1']);
+	_gaq.push(['_gat._forceSSL']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type="text/javascript" src="./Kartoza _ Open Source Geospatial Solutions_files/jquery.js"></script>
+<script type="text/javascript" src="./Kartoza _ Open Source Geospatial Solutions_files/jquery-migrate.min.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://kartoza.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://kartoza.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.3.3">
+<link rel="shortlink" href="http://wp.me/5J0wd">
+<link type="text/css" rel="stylesheet" href="./Kartoza _ Open Source Geospatial Solutions_files/wp_cat_rss_style.css">
+<style type="text/css">img#wpstats{display:none}</style>	<style type="text/css">
+				#branding hgroup {
+			position: absolute !important;
+			clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+			</style>
+	<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; background-image: url('http://kartoza.com/wp-content/uploads/2014/07/SwelendamFadeOut.png'); background-repeat: repeat-x; background-position: top left; background-attachment: fixed; }
+</style>
+	<!--[if lt IE 9]>
+		<script src="http://kartoza.com/wp-content/themes/the-bootstrap/js/html5shiv.min.js" type="text/javascript"></script>
+		<script src="http://kartoza.com/wp-content/themes/the-bootstrap/js/respond.min.js" type="text/javascript"></script>
+	<![endif]-->
+	                <!-- added by Tim for favicon -->
+		<link rel="shortcut icon" href="http://kartoza.com/wp-content/uploads/2014/08/kartoza-favicon.ico">
+		<!-- added by Tim for when we embed leaflet maps -->		
+		<link rel="stylesheet" href="./Kartoza _ Open Source Geospatial Solutions_files/leaflet.css">
+		<!-- added by Tim for Google+ integration -->
+		<script async="" type="text/javascript" src="./Kartoza _ Open Source Geospatial Solutions_files/count.js"></script><script src="./Kartoza _ Open Source Geospatial Solutions_files/count-data.js"></script><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="./Kartoza _ Open Source Geospatial Solutions_files/hovercard.css"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="./Kartoza _ Open Source Geospatial Solutions_files/services.css"></head><body class="home blog custom-background content-sidebar"><a href="https://plus.google.com/109314501233868429173" rel="publisher">Google+</a>
+		<link href="https://plus.google.com/109314501233868429173" rel="publisher">
+		<meta name="google-site-verification" content="y4rHVmAdo7gqGgqQKgLPf2Uco8paXqJ8fCHirCdd8C4">
+		<script type="text/javascript">
+		  (function() {
+		    var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+		    po.src = "https://apis.google.com/js/plusone.js?publisherid=109314501233868429173";
+		    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+		  })();	
+		</script>
+		<!-- end of additions by Tim for Google+ integration -->
+	
+	
+	
+		<div class="container">
+			<div id="page" class="hfeed row">
+								<header id="branding" role="banner" class="span12">
+										<hgroup>
+						<h1 id="site-title">
+							<a href="http://kartoza.com/" title="Kartoza" rel="home">
+								<span>Kartoza</span>
+							</a>
+						</h1>
+						<h2 id="site-description">Open Source Geospatial Solutions</h2>
+					</hgroup>
+					
+										<a id="header-image" href="http://kartoza.com/" title="Kartoza" rel="home">
+						<img src="./Kartoza _ Open Source Geospatial Solutions_files/KartozaWebBanner.png" width="1170" height="250" alt="" scale="0">
+					</a>
+					
+					<nav id="access" role="navigation">
+						<h3 class="assistive-text">Main menu</h3>
+						<div class="skip-link"><a class="assistive-text" href="http://kartoza.com/#content" title="Skip to primary content">Skip to primary content</a></div>
+						<div class="skip-link"><a class="assistive-text" href="http://kartoza.com/#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+												<div class="navbar navbar-fixed-top">
+							<div class="navbar-inner">
+								<div class="container">
+									<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+									<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</a>
+																		<div class="nav-collapse">
+										<div class="menu-top-menu-container"><ul id="menu-top-menu" class="nav"><li id="menu-item-148" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-148 active"><a href="http://kartoza.com/">Home</a></li>
+<li id="menu-item-153" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-153"><a href="http://maps.kartoza.com/">Map Demos</a></li>
+<li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"><a href="http://kartoza.com/contact/">Contact</a></li>
+<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="http://kartoza.com/kartoza-home/">About Kartoza</a></li>
+<li id="menu-item-146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-146"><a href="http://kartoza.com/opengeo/">OpenGeo Suite</a></li>
+<li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href="http://kartoza.com/quick-links/">Quick Links</a></li>
+<li id="menu-item-268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a href="http://kartoza.com/training/">Training</a></li>
+</ul></div>	<form id="searchform" class="navbar-search pull-right" method="get" action="http://kartoza.com/">
+						<label for="s" class="assistive-text hidden">Search</label>
+						<input type="search" class="search-query" name="s" id="s" placeholder="Search">
+					</form>								    </div>
+								</div>
+							</div>
+						</div>
+											</nav><!-- #access -->
+									</header><!-- #branding -->
+<section id="primary" class="span8">
+		<div id="content" role="main">
+		<article id="post-319" class="post-319 post type-post status-publish format-standard hentry category-education category-qgis">
+		
+	<header class="page-header">
+	<h1 class="entry-title"><a href="http://kartoza.com/report-back-on-the-first-qgis-user-conference-in-nodebo-denmark/" title="Permalink to Report back on the first QGIS User Conference in Nødebo, Denmark" rel="bookmark">Report back on the first QGIS User Conference in Nødebo, Denmark</a></h1>		<div class="entry-meta">
+			<span class="sep">Posted on </span><a href="http://kartoza.com/report-back-on-the-first-qgis-user-conference-in-nodebo-denmark/" title="8:08 am" rel="bookmark"><time class="entry-date" datetime="2015-05-31T08:08:46+00:00" pubdate="">May 31, 2015</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="http://kartoza.com/author/timlinux/" title="View all posts by Tim Sutton" rel="author">Tim Sutton</a></span></span>		<span class="sep"> | </span>
+		<span class="comments-link">
+			<a href="http://kartoza.com/report-back-on-the-first-qgis-user-conference-in-nodebo-denmark/#disqus_thread" data-disqus-identifier="319 http://kartoza.com/?p=319">0 Comments</a>		</span>
+				</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content clearfix">
+		<p>I finally have some time to sit down and write up some thoughts on the QGIS User Conference and Developer Meeting (aka Hackfest) that we just held in Nødebo, Denmark. First up I need to thank Lene Fischer, who was the organiser and wowed us all with her relaxed and competent organisational approach to the conference. Thanks also to the University of Copenhagen School of Forestry – they sponsored the event by providing the venue and accommodation – and the venue was absolutely awesome with little cottages in the forest and all sorts of interesting diversions scattered around the forest. Lene gave me a list of names of people who helped to organise the event – I am sorry I have only got your first names but a very big <strong>thank you</strong> to you all!</p>
+<p>&nbsp;</p>
+<table width="834" class="table table-striped table-hover">
+<tbody>
+<tr>
+<td width="834">Students: Runner, Shuttlebus, Kitchenaid, Cleaner, Info, Coordinator, Parking, Inn-keeper, Keyholder</td>
+</tr>
+<tr>
+<td width="834">Johanne</td>
+</tr>
+<tr>
+<td width="834">Thomas</td>
+</tr>
+<tr>
+<td width="834">Mikkel M</td>
+</tr>
+<tr>
+<td width="834">Steffen</td>
+</tr>
+<tr>
+<td width="834">Christian</td>
+</tr>
+<tr>
+<td width="834">Mikkel N</td>
+</tr>
+<tr>
+<td width="834">Ida</td>
+</tr>
+<tr>
+<td width="834">Louise</td>
+</tr>
+<tr>
+<td width="834">Anita</td>
+</tr>
+<tr>
+<td width="834">Thyge</td>
+</tr>
+<tr>
+<td width="834">Rune</td>
+</tr>
+<tr>
+<td width="834">Nanna</td>
+</tr>
+<tr>
+<td width="834">Peter</td>
+</tr>
+<tr>
+<td width="834">Jens</td>
+</tr>
+<tr>
+<td width="834">Heidi</td>
+</tr>
+<tr>
+<td width="834">Simon</td>
+</tr>
+<tr>
+<td width="834"></td>
+</tr>
+<tr>
+<td width="834">Employees at University of CopenhagenCoordination, Accomodation, Bed&amp;Linnen, Computer, Kitchen, Network, Tent/chairs/, Cookiebaker, Supporter, Cheerleader, Lifgt, Microphones/projector, Webpage, DTP,</td>
+</tr>
+<tr>
+<td width="834">Anne</td>
+</tr>
+<tr>
+<td width="834">Irene</td>
+</tr>
+<tr>
+<td width="834">Aleksander</td>
+</tr>
+<tr>
+<td width="834">Klaus</td>
+</tr>
+<tr>
+<td width="834">Vivian</td>
+</tr>
+<tr>
+<td width="834">Nicolas</td>
+</tr>
+<tr>
+<td width="834">Brian</td>
+</tr>
+<tr>
+<td width="834">Mike</td>
+</tr>
+<tr>
+<td width="834">Bo</td>
+</tr>
+<tr>
+<td width="834">Lene</td>
+</tr>
+<tr>
+<td width="834">Bent</td>
+</tr>
+<tr>
+<td width="834">Henning</td>
+</tr>
+<tr>
+<td width="834">Poul</td>
+</tr>
+<tr>
+<td width="834">Peter</td>
+</tr>
+<tr>
+<td width="834">MereteSusanne</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>On the first day of the user conference, I got to present a session on ‘the future of QGIS’ (<a href="http://www.ustream.tv/recorded/62426497">video feed here</a>&nbsp;and <a href="http://www.ustream.tv/recorded/62426994">continued here</a>) which held more as a town hall style meeting with a few themes (desktop, server, mobile etc.) I think the participants enjoyed the format and it was equally novel for the general user community (who got to have their questions answered directly by developers) and the developers (who got to see what real users look like).</p>
+<p>The QGIS User Conference&nbsp;had many interesting talks (you can see the complete programme <a href="https://qgis2015.wordpress.com/program/">here</a> – along with links to the video stream for each talk). For me the most interesting things happening at the meetup (both user conference and hackfest parts were:</p>
+<ul>
+<li>the fact that we had our first ever general users conference (with around 150 attendees)</li>
+<li>the geometry checking tools developed by <a href="http://www.sourcepole.com/en/about-us/contact/sandro-mani/">Sandro Mani</a>&nbsp;from Sourcepole</li>
+<li>the huge amount of effort and thought being put into the processing framework – if you haven’t already tried out the QGIS processing tools, do go and try them!</li>
+<li>The server side plugin framework that <a href="http://www.itopen.it/">Alessandro Pasotti</a>&nbsp;is working on – see his blog post here too&nbsp;<a href="http://www.itopen.it/qgis-developer-meeting-in-nodebo/">http://www.itopen.it/qgis-developer-meeting-in-nodebo/</a></li>
+<li>The amount of polish being applied to QGIS – there are probably less ‘gee whizz’ new features and a lot more fixes and improvements – just take a look at the <a href="https://github.com/qgis/QGIS/pulls">incoming pull requests</a> to get a flavour of the kind of activity going on.</li>
+<li>The new geometry system by&nbsp;<a href="http://www.sourcepole.com/en/ueber-uns/kontakt/dr-marco-hugentobler/">Marco Hugentobler</a> (also from Sourcepole) which will support curves and 3D geometries (z / m). The graphical user interface for working with the new geometries won’t come until a later release, but 2.10 will get the underlying support added (along with shims to provide backwards compatibility to the old geometry classes).</li>
+<li>There were some interesting talks on using QGIS in a server side / headless / command line context – again check out the talks and video streams in the <a href="https://qgis2015.wordpress.com/program/">programme</a>&nbsp;to watch talks by Martin Dobias, Dražen Odobašić.</li>
+<li>QGIS on mobile is coming – Matthias Kuhn showed off the current state of QField – the Android native interface for field work based on QGIS he has been working on. See his blog post <a href="http://www.opengis.ch/2015/05/27/tak-nodebo/">here</a> too for his take on the week. While the Android work shows lots of promise, there are still lots of problems to be resolved – for example missing support for ‘Lollipop’ devices. Please consider sponsoring Matthias’ efforts if you can.</li>
+<li>There is a heap of interesting stuff coming down the pipeline from Nyall Dawson for the production of print maps and rendering effects for map renderers. Nyall also showed off some other very interesting ideas for context based variables that can be used in expressions – it’s hard to explain it in &nbsp;a sentance or two – suffice to know that power users are going to have even more awesome tools at their fingertips for producing great maps.</li>
+</ul>
+<p>One hot topic was ‘when will QGIS 3.0 be released’. The short answer to that question is that ‘we don’t know’ – Jürgen Fischer and Matthias Kuhn are still investigating our options and once they have had enough time to understand the implications of upgrading to Qt5, Python 3 etc. they will make some recommendations. I can tell you that we agreed to announce clearly and long in advance (e.g. 1 year) the roadmap to moving to QGIS 3.0 so that plugin builders and others who are using QGIS libraries for building third party apps will have enough time to be ready for the transition. At the moment it is still uncertain if there even is a pressing need to make the transition, so we are going to hang back and wait for Jürgen &amp; Matthias’ feedback.</p>
+<p>I apologise for not reporting on many of other interesting talks and birds of a feather meetings here – there was so much going on including work on documentation, translations, bug fixing, bug triaging that it is quite difficult to list it all here.</p>
+<p>Two initiatives I was involved in at the meetup: the user certification programme and the formation of a QGIS legal entity. I am not going to post details here because things are not finalised yet (watch the mailing&nbsp;lists for details on the legal entity), but if you are interested in the certification programme, please get into contact – we have started drafting a roadmap for the roll out of our official curriculum. The QGIS project also got a huge boost from the QGIS Academy folks who will be contributing all their training resources right into the core of the QGIS documentation project (see Kurte Menke’s presentation notes on the <a href="https://qgis2015.wordpress.com/program/">programme</a>).</p>
+<p>We (Paolo Cavallini, Alessandre Pasotti, Nyall Dawson and myself) had a little roundtable discussion on the last day of the hackfest where we ran through some of the highlights from the week. You can listen to it <a href="http://traffic.libsyn.com/qgispodcast/QGISHackFest2015Nodebo_-_20150522_18.56.mp3">here</a>&nbsp;– or subscribe to the podcast at <a href="http://podcast.qgis.org/">http://podcast.qgis.org</a> (I will try to get back into the swing of making more regular episodes).</p>
+<p>Well that wraps up my feedback for the event –&nbsp;I really encourage everyone to come along and join us on the next QGIS User Conference – it was fun, informal and informative!</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li><a href="http://kartoza.com/#" class="sharing-anchor sd-button share-more"><span>Share</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-319" class="share-google-plus-1 sd-button share-icon" href="http://kartoza.com/report-back-on-the-first-qgis-user-conference-in-nodebo-denmark/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-319" class="share-facebook sd-button share-icon" href="http://kartoza.com/report-back-on-the-first-qgis-user-conference-in-nodebo-denmark/?share=facebook&amp;nb=1" target="_blank" title="Share on Facebook"><span>Facebook<span class="share-count">7</span></span></a></li><li class="share-end"></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-319" class="share-twitter sd-button share-icon" href="http://kartoza.com/report-back-on-the-first-qgis-user-conference-in-nodebo-denmark/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-stumbleupon"><a rel="nofollow" data-shared="" class="share-stumbleupon sd-button share-icon" href="http://kartoza.com/report-back-on-the-first-qgis-user-conference-in-nodebo-denmark/?share=stumbleupon&amp;nb=1" target="_blank" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon" href="http://kartoza.com/report-back-on-the-first-qgis-user-conference-in-nodebo-denmark/?share=reddit&amp;nb=1" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-tumblr"><a rel="nofollow" data-shared="" class="share-tumblr sd-button share-icon" href="http://kartoza.com/report-back-on-the-first-qgis-user-conference-in-nodebo-denmark/?share=tumblr&amp;nb=1" target="_blank" title="Click to share on Tumblr"><span>Tumblr</span></a></li><li class="share-end"></li><li class="share-linkedin"><a rel="nofollow" data-shared="sharing-linkedin-319" class="share-linkedin sd-button share-icon" href="http://kartoza.com/report-back-on-the-first-qgis-user-conference-in-nodebo-denmark/?share=linkedin&amp;nb=1" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn<span class="share-count">3</span></span></a></li><li class="share-pinterest"><a rel="nofollow" data-shared="sharing-pinterest-319" class="share-pinterest sd-button share-icon" href="http://kartoza.com/report-back-on-the-first-qgis-user-conference-in-nodebo-denmark/?share=pinterest&amp;nb=1" target="_blank" title="Click to share on Pinterest"><span>Pinterest</span></a></li><li class="share-end"></li><li class="share-email share-service-visible"><a rel="nofollow" data-shared="" class="share-email sd-button share-icon" href="http://kartoza.com/report-back-on-the-first-qgis-user-conference-in-nodebo-denmark/?share=email&amp;nb=1" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-print"><a rel="nofollow" data-shared="" class="share-print sd-button share-icon" href="http://kartoza.com/report-back-on-the-first-qgis-user-conference-in-nodebo-denmark/" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li><li class="share-end"></li></ul></div></div></div></div></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+		<span class="cat-links block">Posted in <a href="http://kartoza.com/category/education/" rel="category tag">Education</a>, <a href="http://kartoza.com/category/qgis/" rel="category tag">QGIS</a>.</span>	</footer><!-- #entry-meta -->
+	
+	</article><!-- #post-319 -->
+<article id="post-301" class="post-301 post type-post status-publish format-standard hentry category-docker category-qgis">
+		
+	<header class="page-header">
+	<h1 class="entry-title"><a href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/" title="Permalink to How to run a Linux GUI application on OSX using Docker" rel="bookmark">How to run a Linux GUI application on OSX using Docker</a></h1>		<div class="entry-meta">
+			<span class="sep">Posted on </span><a href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/" title="12:12 am" rel="bookmark"><time class="entry-date" datetime="2015-04-14T00:12:28+00:00" pubdate="">April 14, 2015</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="http://kartoza.com/author/timlinux/" title="View all posts by Tim Sutton" rel="author">Tim Sutton</a></span></span>		<span class="sep"> | </span>
+		<span class="comments-link">
+			<a href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/#disqus_thread" data-disqus-identifier="301 http://kartoza.com/?p=301">5 Comments</a>		</span>
+				</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content clearfix">
+		<p>Ok so here is the scenario:</p>
+<blockquote><p>You just got a nice new MacBook 15″ Retina computer thinking it would work as nicely for Linux as your 13″ MacBook did and then you discover that the hybrid Intel/Nvidia card support in Linux is a show stopper and the WebCam does not work under Linux.</p></blockquote>
+<p>Well that is what happened to me, so I decided to give working with OSX a try on this laptop with the help of docker for running all those essential apps that I use for development. One thing I was curious about was whether it would be possible to run native GUI (X11) applications from inside docker and have them show up on my OSX desktop. I turns out that it is fairly easy to do this – here is what I did:</p>
+<h3>Overview</h3>
+<ul>
+<li>Install brew</li>
+<li>Install socat</li>
+<li>Install XQuartz</li>
+<li>Install Docker (I used Kitematic beta)</li>
+<li>Grab a docker image that has a gui app you want to run (I used my the QGIS Desktop image published by Kartoza on the docker hub)</li>
+<li>Run it forwarding the display to your OSX host</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Digging In</h3>
+<p>Ok first install <a href="http://brew.sh/">brew</a> (an apt-like package manager for OSX).</p>
+<pre><code id="selectable">ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code></pre>
+<p>Now install <a href="http://linux.die.net/man/1/socat">socat</a> – a command line tool that lets you redirect sockets in unix like OS’s – thankfully it runs in OSX too as it is a really neat tool!</p>
+<pre>brew install socat</pre>
+<p>Next we are going to install <a href="http://xquartz.macosforge.org/landing/">XQuartz</a> – which basically gives you an X11 display client on your OSX desktop. Just grab the package at&nbsp;<a href="http://xquartz.macosforge.org/landing/">http://xquartz.macosforge.org/landing/</a> and do the usual OSX procedure for installing it.</p>
+<p>Unfortunately docker does not run natively on OSX, and the whole boot2docker setup is probably quite difficult to explain to people. However there is a very nice (currently beta) docker client being developed for OSX called <a href="https://kitematic.com/">kinematic</a>. I installed kinematic and then simply hit shift-command-t in order to get a bash shell with docker available in it.</p>
+<p>Now grab my QGIS desktop image for docker:</p>
+<pre>docker pull kartoza/qgis-desktop</pre>
+<p>Once the image is downloaded we are done with the basic setup and can kick over to running our Linux GUI application (obviously QGIS in this example).</p>
+<h3>Running QGIS</h3>
+<p>Ok so there are four steps we need to do to run our Linux app:</p>
+<ol>
+<li>Start socat (in my testing it had to be done first)</li>
+<li>Start XQuartz</li>
+<li>Start Kinematic</li>
+<li>Start QGIS</li>
+</ol>
+<p>I started socat like this:</p>
+<pre class="p1"><span class="s1">socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"</span></pre>
+<p class="p1">It will run in the foreground waiting for connections and then pass them over to XQuartz.</p>
+<p class="p1">Next I started XQuartz (you can close the XTerm window that opens by default). &nbsp;In X11 preferences in XQuartz, in the security tab, check both boxes:</p>
+<p class="p1"><a data-postid="fsg_post_301" data-imgid="305" class="thumbnail" href="http://kartoza.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-13-at-23.40.21.png"><img class="aligncenter wp-image-305 size-medium" src="./Kartoza _ Open Source Geospatial Solutions_files/Screen-Shot-2015-04-13-at-23.40.21-300x202.png" alt="Screen Shot 2015-04-13 at 23.40.21" width="300" height="202" scale="0"></a></p>
+<p class="p1">Next I started kinematic, and pressed SHIFT-COMMAND-T to open a docker terminal.</p>
+<p class="p1"><a data-postid="fsg_post_301" data-imgid="306" class="thumbnail" href="http://kartoza.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-13-at-23.16.21.png"><img class="aligncenter wp-image-306 size-medium" src="./Kartoza _ Open Source Geospatial Solutions_files/Screen-Shot-2015-04-13-at-23.16.21-300x111.png" alt="Screen Shot 2015-04-13 at 23.16.21" width="300" height="111" scale="0"></a></p>
+<p class="p1">Lastly I ran the QGIS docker container like this:</p>
+<pre class="p1">docker run --rm -e DISPLAY=192.168.0.3:0 \
+    -i -t -v /Users/timlinux:/home/timlinux \
+    kartoza/qgis-desktop qgis</pre>
+<p>You can mix in any standard docker options there – in this case I created &nbsp;shared volume between my OSX home directory and a /home/timlinux directory in the container. You need to determine the IP address of your OSX machine and use it instead of the IP address listed after DISPLAY in the above command. Here is a nice picture of QGIS (from a Linux container) running on my OSX desktop:</p>
+<p><a data-postid="fsg_post_301" data-imgid="304" class="thumbnail" href="http://kartoza.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-13-at-23.52.21.png"><img class="aligncenter size-large wp-image-304" src="./Kartoza _ Open Source Geospatial Solutions_files/Screen-Shot-2015-04-13-at-23.52.21-1024x640.png" alt="Screen Shot 2015-04-13 at 23.52.21" width="770" height="481" scale="0"></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>This same technique should work nicely with any other GUI application under Linux – I will mostly use if for running tests of QGIS based plugins and for using QGIS in my docker orchestrated environments.</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li><a href="http://kartoza.com/#" class="sharing-anchor sd-button share-more"><span>Share</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-301" class="share-google-plus-1 sd-button share-icon" href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-301" class="share-facebook sd-button share-icon" href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/?share=facebook&amp;nb=1" target="_blank" title="Share on Facebook"><span>Facebook<span class="share-count">3</span></span></a></li><li class="share-end"></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-301" class="share-twitter sd-button share-icon" href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-stumbleupon"><a rel="nofollow" data-shared="" class="share-stumbleupon sd-button share-icon" href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/?share=stumbleupon&amp;nb=1" target="_blank" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon" href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/?share=reddit&amp;nb=1" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-tumblr"><a rel="nofollow" data-shared="" class="share-tumblr sd-button share-icon" href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/?share=tumblr&amp;nb=1" target="_blank" title="Click to share on Tumblr"><span>Tumblr</span></a></li><li class="share-end"></li><li class="share-linkedin"><a rel="nofollow" data-shared="sharing-linkedin-301" class="share-linkedin sd-button share-icon" href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/?share=linkedin&amp;nb=1" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn<span class="share-count">3</span></span></a></li><li class="share-pinterest"><a rel="nofollow" data-shared="sharing-pinterest-301" class="share-pinterest sd-button share-icon" href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/?share=pinterest&amp;nb=1" target="_blank" title="Click to share on Pinterest"><span>Pinterest</span></a></li><li class="share-end"></li><li class="share-email share-service-visible"><a rel="nofollow" data-shared="" class="share-email sd-button share-icon" href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/?share=email&amp;nb=1" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-print"><a rel="nofollow" data-shared="" class="share-print sd-button share-icon" href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li><li class="share-end"></li></ul></div></div></div></div></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+		<span class="cat-links block">Posted in <a href="http://kartoza.com/category/docker/" rel="category tag">Docker</a>, <a href="http://kartoza.com/category/qgis/" rel="category tag">QGIS</a>.</span>	</footer><!-- #entry-meta -->
+	
+	</article><!-- #post-301 -->
+<article id="post-297" class="post-297 post type-post status-publish format-standard hentry category-docker tag-docker">
+		
+	<header class="page-header">
+	<h1 class="entry-title"><a href="http://kartoza.com/7-tips-for-making-productive-use-of-docker/" title="Permalink to 7 tips for making productive use of docker" rel="bookmark">7 tips for making productive use of docker</a></h1>		<div class="entry-meta">
+			<span class="sep">Posted on </span><a href="http://kartoza.com/7-tips-for-making-productive-use-of-docker/" title="3:01 pm" rel="bookmark"><time class="entry-date" datetime="2015-04-01T15:01:57+00:00" pubdate="">April 1, 2015</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="http://kartoza.com/author/timlinux/" title="View all posts by Tim Sutton" rel="author">Tim Sutton</a></span></span>		<span class="sep"> | </span>
+		<span class="comments-link">
+			<a href="http://kartoza.com/7-tips-for-making-productive-use-of-docker/#disqus_thread" data-disqus-identifier="297 http://kartoza.com/?p=297">0 Comments</a>		</span>
+				</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content clearfix">
+		<div class="gmail_default">I have been using and learning <a href="https://www.docker.com/">docker</a> since the early days after it was announced. I really love using docker but there are some things I just wish I had cottoned onto at the start. Here are my top 7 tips to help new users to docker avoid making the same mistakes I did.</div>
+<div class="gmail_default"></div>
+<div class="gmail_default"><a data-postid="fsg_post_297" data-imgid="298" class="thumbnail" href="./Kartoza _ Open Source Geospatial Solutions_files/docker-logo-370x290.jpg"><img class="aligncenter size-full wp-image-298" src="./Kartoza _ Open Source Geospatial Solutions_files/docker-logo-370x290.jpg" alt="docker-logo-370x290" width="370" height="290" scale="0"></a></div>
+<ol>
+<li class="gmail_default">​Docker is great when you want to densely pack many isolated services onto each server. If you prefer to take the approach of e.g. deploying many microservers (e.g. AWS micro instances) you might be better off looking at using a configuration management tool like ansible.​ Although even then docker still has some advantages as it is nice to be able to just check out an image onto a micro instance and spin it up knowing everything will ‘just work’.</li>
+<li class="gmail_default">If you go with docker really avoid the temptation of treating docker containers like virtual machines. Even though you can run multiple services in each container (e.g. using supervisord) you should really architect your docker images so that they are virtual application appliances, with each appliance doing one thing only (like the old unix mantra eh?). So have a discrete appliance for postgis, another for uwsgi, another for mapserver, another for geoserver etc. rather than mixing things into the same service.</li>
+<li class="gmail_default">You should do everything you can to make your containers stateless. Or put differently, you should be able to confidently destroy and redeploy a container as a fresh instance with no loss of data or configuration. This means that your investment should be in building the images on which your containers are based and not the containers themselves. In practice this means that you should e.g. mount your postgres cluster from a host volume, store your user uploaded files in a host volume and store no generated data inside the container itself.</li>
+<li class="gmail_default">You should avoid the temptation to build your own container orchestration tools. Rather use a tool like fig (now part of docker as ‘docker compose’) that uses a simple yaml file to define your micro services architecture and can be used to reliably spin up a working configuration. I combine that with some simple makefiles because I am too lazy to remember the commands needed to administer the orchestrated application using fig.</li>
+<li class="gmail_default">&nbsp;Lean how to publish your images into <a href="http://hub.docker.com/" target="_blank">hub.docker.com</a> and have them build on push to your repo and build when the upstream container your docker image is based on gets an update (e.g. a security fix). Also invest the time in learning to tag different versions in hub so that you can have a known good working configuration against specific image versions.</li>
+<li class="gmail_default">Build up your images in layers. Start with a standard base image e.g. ‘ubuntu:trusty’ then add python and save that as a new standard image, then add django and save that as a new base image etc. This way each virtual application you create is defined by only the thinnest amount of configuration and software deployment possible, and you can share the underlying logic of the lower layers between as many images as possible.</li>
+<li class="gmail_default">My last piece of advice is that when you are building services that need to span multiple nodes, you need to plan your architecture carefully – docker does not yet have great built in multi-host networking so you may want to look at using a virtual switch, socat, a third party tool like pipeworks (if I remember the name properly) etc. Or better yet define your architecture so that hosts can operate independently of each other as much as possible.</li>
+</ol>
+<div class="gmail_default"></div>
+<div class="gmail_default">I should mention that I have pretty much broken all these mantras during my journey into docker and am still paying the price. However, when you do get things working nicely, it is incredibly cool being able to log into a machine, check out your repo and type ‘fig up -d’ and seeing your application build and deploy itself.</div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li><a href="http://kartoza.com/#" class="sharing-anchor sd-button share-more"><span>Share</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-297" class="share-google-plus-1 sd-button share-icon" href="http://kartoza.com/7-tips-for-making-productive-use-of-docker/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-297" class="share-facebook sd-button share-icon" href="http://kartoza.com/7-tips-for-making-productive-use-of-docker/?share=facebook&amp;nb=1" target="_blank" title="Share on Facebook"><span>Facebook<span class="share-count">1</span></span></a></li><li class="share-end"></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-297" class="share-twitter sd-button share-icon" href="http://kartoza.com/7-tips-for-making-productive-use-of-docker/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-stumbleupon"><a rel="nofollow" data-shared="" class="share-stumbleupon sd-button share-icon" href="http://kartoza.com/7-tips-for-making-productive-use-of-docker/?share=stumbleupon&amp;nb=1" target="_blank" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon" href="http://kartoza.com/7-tips-for-making-productive-use-of-docker/?share=reddit&amp;nb=1" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-tumblr"><a rel="nofollow" data-shared="" class="share-tumblr sd-button share-icon" href="http://kartoza.com/7-tips-for-making-productive-use-of-docker/?share=tumblr&amp;nb=1" target="_blank" title="Click to share on Tumblr"><span>Tumblr</span></a></li><li class="share-end"></li><li class="share-linkedin"><a rel="nofollow" data-shared="sharing-linkedin-297" class="share-linkedin sd-button share-icon" href="http://kartoza.com/7-tips-for-making-productive-use-of-docker/?share=linkedin&amp;nb=1" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-pinterest"><a rel="nofollow" data-shared="sharing-pinterest-297" class="share-pinterest sd-button share-icon" href="http://kartoza.com/7-tips-for-making-productive-use-of-docker/?share=pinterest&amp;nb=1" target="_blank" title="Click to share on Pinterest"><span>Pinterest</span></a></li><li class="share-end"></li><li class="share-email share-service-visible"><a rel="nofollow" data-shared="" class="share-email sd-button share-icon" href="http://kartoza.com/7-tips-for-making-productive-use-of-docker/?share=email&amp;nb=1" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-print"><a rel="nofollow" data-shared="" class="share-print sd-button share-icon" href="http://kartoza.com/7-tips-for-making-productive-use-of-docker/" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li><li class="share-end"></li></ul></div></div></div></div></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+		<span class="cat-links block">Posted in <a href="http://kartoza.com/category/docker/" rel="category tag">Docker</a>.</span>	</footer><!-- #entry-meta -->
+	
+	</article><!-- #post-297 -->
+<article id="post-278" class="post-278 post type-post status-publish format-standard hentry category-fossgis category-qgis">
+		
+	<header class="page-header">
+	<h1 class="entry-title"><a href="http://kartoza.com/generating-an-xyz-ascii-file-from-a-qgis-raster/" title="Permalink to Generating an XYZ ASCII file from a QGIS raster" rel="bookmark">Generating an XYZ ASCII file from a QGIS raster</a></h1>		<div class="entry-meta">
+			<span class="sep">Posted on </span><a href="http://kartoza.com/generating-an-xyz-ascii-file-from-a-qgis-raster/" title="6:59 am" rel="bookmark"><time class="entry-date" datetime="2015-03-08T06:59:04+00:00" pubdate="">March 8, 2015</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="http://kartoza.com/author/timlinux/" title="View all posts by Tim Sutton" rel="author">Tim Sutton</a></span></span>		<span class="sep"> | </span>
+		<span class="comments-link">
+			<a href="http://kartoza.com/generating-an-xyz-ascii-file-from-a-qgis-raster/#disqus_thread" data-disqus-identifier="278 http://kartoza.com/?p=278">2 Comments</a>		</span>
+				</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content clearfix">
+		<p>Someone wrote to me asking if it would be possible to generate an<a href="http://www.gdal.org/frmt_xyz.html"> XYZ ASCII</a> file from a single band raster layer in QGIS. No doubt there are more efficient ways (this approach is pretty slow but it works), but I thought it would be fun to show how you can iterate over a raster, writing out the value of each cell into a text file (along with the centroid coordinates for that cell).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><script src="./Kartoza _ Open Source Geospatial Solutions_files/f5c4c6dcbd7c0e478c52.js"></script><link rel="stylesheet" href="./Kartoza _ Open Source Geospatial Solutions_files/embed-7346e9a735aaeeacede51d1efaad6208f95d9edbc222155878bfddc2da28fa87.css"></p><div id="gist19224712" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-raster_to_xyz-py" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-python">
+      <table class="highlight tab-size js-file-line-container table table-striped table-hover" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-raster_to_xyz-py-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-raster_to_xyz-py-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> PyQt4.QtGui <span class="pl-k">import</span> QProgressBar</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-raster_to_xyz-py-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> PyQt4.QtCore <span class="pl-k">import</span> Qt</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-raster_to_xyz-py-LC3" class="blob-code blob-code-inner js-file-line">l <span class="pl-k">=</span> iface.activeLayer()</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-raster_to_xyz-py-LC4" class="blob-code blob-code-inner js-file-line">w <span class="pl-k">=</span> l.width()</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-raster_to_xyz-py-LC5" class="blob-code blob-code-inner js-file-line">h <span class="pl-k">=</span> l.height()</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-raster_to_xyz-py-LC6" class="blob-code blob-code-inner js-file-line">p <span class="pl-k">=</span> l.dataProvider()</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-raster_to_xyz-py-LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-c"># layers are base 1 for block reader</span></td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-raster_to_xyz-py-LC8" class="blob-code blob-code-inner js-file-line">b <span class="pl-k">=</span> p.block(<span class="pl-c1">1</span>, p.extent(), w, h)</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-raster_to_xyz-py-LC9" class="blob-code blob-code-inner js-file-line">f <span class="pl-k">=</span> <span class="pl-v">file</span>(<span class="pl-s"><span class="pl-pds">'</span>/tmp/test.xyz<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>w<span class="pl-pds">'</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-raster_to_xyz-py-LC10" class="blob-code blob-code-inner js-file-line">f.write(<span class="pl-s"><span class="pl-pds">'</span>Longitude,Latitude,VI<span class="pl-pds">'</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-raster_to_xyz-py-LC11" class="blob-code blob-code-inner js-file-line">pix_x <span class="pl-k">=</span> l.rasterUnitsPerPixelX()</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-raster_to_xyz-py-LC12" class="blob-code blob-code-inner js-file-line">pix_y <span class="pl-k">=</span> l.rasterUnitsPerPixelY()</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-raster_to_xyz-py-LC13" class="blob-code blob-code-inner js-file-line">half_x <span class="pl-k">=</span> pix_x <span class="pl-k">/</span> <span class="pl-c1">2</span></td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-raster_to_xyz-py-LC14" class="blob-code blob-code-inner js-file-line">half_y <span class="pl-k">=</span> pix_y <span class="pl-k">/</span> <span class="pl-c1">2</span></td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-raster_to_xyz-py-LC15" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-raster_to_xyz-py-LC16" class="blob-code blob-code-inner js-file-line">bar <span class="pl-k">=</span> QProgressBar(<span class="pl-c1">None</span>)</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-raster_to_xyz-py-LC17" class="blob-code blob-code-inner js-file-line">bar.setMaximum(h)</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-raster_to_xyz-py-LC18" class="blob-code blob-code-inner js-file-line">bar.setAlignment(Qt.AlignLeft<span class="pl-k">|</span>Qt.AlignVCenter)</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-raster_to_xyz-py-LC19" class="blob-code blob-code-inner js-file-line">progressMessageBar <span class="pl-k">=</span> iface.messageBar().createMessage(<span class="pl-s"><span class="pl-pds">"</span>Exporting to XYZ...<span class="pl-pds">"</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-raster_to_xyz-py-LC20" class="blob-code blob-code-inner js-file-line">progressMessageBar.layout().addWidget(bar)</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-raster_to_xyz-py-LC21" class="blob-code blob-code-inner js-file-line">iface.messageBar().pushWidget(progressMessageBar, iface.messageBar().<span class="pl-c1">INFO</span>)</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-raster_to_xyz-py-LC22" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-raster_to_xyz-py-LC23" class="blob-code blob-code-inner js-file-line">extent <span class="pl-k">=</span> p.extent()</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-raster_to_xyz-py-LC24" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-raster_to_xyz-py-LC25" class="blob-code blob-code-inner js-file-line">count <span class="pl-k">=</span> <span class="pl-c1">0</span></td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-raster_to_xyz-py-LC26" class="blob-code blob-code-inner js-file-line">y <span class="pl-k">=</span> extent.yMinimum()</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-raster_to_xyz-py-LC27" class="blob-code blob-code-inner js-file-line"><span class="pl-k">while</span> y <span class="pl-k">&lt;</span> extent.yMaximum():</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-raster_to_xyz-py-LC28" class="blob-code blob-code-inner js-file-line">    y <span class="pl-k">+=</span> pix_y</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-raster_to_xyz-py-LC29" class="blob-code blob-code-inner js-file-line">    bar.setValue(count)</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-raster_to_xyz-py-LC30" class="blob-code blob-code-inner js-file-line">    count <span class="pl-k">+=</span> <span class="pl-c1">1</span></td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-raster_to_xyz-py-LC31" class="blob-code blob-code-inner js-file-line">    x <span class="pl-k">=</span> extent.xMinimum()</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-raster_to_xyz-py-LC32" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">while</span> x <span class="pl-k">&lt;</span> extent.xMaximum():</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="file-raster_to_xyz-py-LC33" class="blob-code blob-code-inner js-file-line">        </td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="file-raster_to_xyz-py-LC34" class="blob-code blob-code-inner js-file-line">        x <span class="pl-k">+=</span> pix_x</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="file-raster_to_xyz-py-LC35" class="blob-code blob-code-inner js-file-line">        pos <span class="pl-k">=</span> QgsPoint(x <span class="pl-k">-</span> half_x, y <span class="pl-k">-</span> half_y)</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="file-raster_to_xyz-py-LC36" class="blob-code blob-code-inner js-file-line">        result <span class="pl-k">=</span> p.identify(pos, QgsRaster.IdentifyFormatValue).results()[<span class="pl-c1">1</span>]</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="file-raster_to_xyz-py-LC37" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span> result <span class="pl-k">&gt;</span> <span class="pl-c1">0</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="file-raster_to_xyz-py-LC38" class="blob-code blob-code-inner js-file-line">            f.write(<span class="pl-s"><span class="pl-pds">'</span><span class="pl-c1">%s</span>,<span class="pl-c1">%s</span>,<span class="pl-c1">%i</span><span class="pl-cce">\n</span><span class="pl-pds">'</span></span> <span class="pl-k">%</span> (pos.x(), pos.y(), result))</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="file-raster_to_xyz-py-LC39" class="blob-code blob-code-inner js-file-line">f.close()</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="file-raster_to_xyz-py-LC40" class="blob-code blob-code-inner js-file-line">iface.messageBar().clearWidgets()</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="file-raster_to_xyz-py-LC41" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-raster_to_xyz-py-L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="file-raster_to_xyz-py-LC42" class="blob-code blob-code-inner js-file-line">    </td>
+      </tr>
+</tbody></table>
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/timlinux/f5c4c6dcbd7c0e478c52/raw/2005c857cda1a132c57baeaeeda91d9fc0a8e38e/raster_to_xyz.py" style="float:right">view raw</a>
+        <a href="https://gist.github.com/timlinux/f5c4c6dcbd7c0e478c52#file-raster_to_xyz-py">raster_to_xyz.py</a>
+        hosted with <img draggable="false" class="emoji" alt="❤" src="./Kartoza _ Open Source Geospatial Solutions_files/2764.png" scale="0"> by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<p></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>To use the script, you should save it to your local machine, then open the python console and load the script in the python editor. Next select a single band raster and then run the script in the editor. If your raster is quite large, it will take some time to run. I have spent zero time trying to optimise the script – if someone has an idea for doing it faster, send me a patch and I will update the example above.</p>
+<p>The generated output dataset will look something like this:</p>
+<p>&nbsp;</p>
+<pre>Longitude,Latitude,VI
+8.31259406548,7.86128343221,10
+8.31264849753,7.86128343221,16
+8.31270292958,7.86128343221,18
+8.31248520138,7.8613378416,15
+8.31253963343,7.8613378416,17
+8.31259406548,7.8613378416,24
+8.31264849753,7.8613378416,46
+8.31270292958,7.8613378416,47
+...
+</pre>
+<p>The resulting script can be used with programs like <a href="http://www.gdal.org/gdal_grid.html">gdal_grid</a>&nbsp;or loaded back into QGIS as a vector layer using the Delimited Text provider:</p>
+<p>&nbsp;</p>
+<p><a data-postid="fsg_post_278" data-imgid="283" class="thumbnail" href="http://kartoza.com/wp-content/uploads/2015/03/QGIS-74ac7f0-raster_to_xyz_171.png"><img class="aligncenter size-large wp-image-283" src="./Kartoza _ Open Source Geospatial Solutions_files/QGIS-74ac7f0-raster_to_xyz_171-1024x617.png" alt="QGIS 74ac7f0 - raster_to_xyz_171" width="770" height="464" scale="0"></a></p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li><a href="http://kartoza.com/#" class="sharing-anchor sd-button share-more"><span>Share</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-278" class="share-google-plus-1 sd-button share-icon" href="http://kartoza.com/generating-an-xyz-ascii-file-from-a-qgis-raster/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-278" class="share-facebook sd-button share-icon" href="http://kartoza.com/generating-an-xyz-ascii-file-from-a-qgis-raster/?share=facebook&amp;nb=1" target="_blank" title="Share on Facebook"><span>Facebook<span class="share-count">9</span></span></a></li><li class="share-end"></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-278" class="share-twitter sd-button share-icon" href="http://kartoza.com/generating-an-xyz-ascii-file-from-a-qgis-raster/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-stumbleupon"><a rel="nofollow" data-shared="" class="share-stumbleupon sd-button share-icon" href="http://kartoza.com/generating-an-xyz-ascii-file-from-a-qgis-raster/?share=stumbleupon&amp;nb=1" target="_blank" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon" href="http://kartoza.com/generating-an-xyz-ascii-file-from-a-qgis-raster/?share=reddit&amp;nb=1" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-tumblr"><a rel="nofollow" data-shared="" class="share-tumblr sd-button share-icon" href="http://kartoza.com/generating-an-xyz-ascii-file-from-a-qgis-raster/?share=tumblr&amp;nb=1" target="_blank" title="Click to share on Tumblr"><span>Tumblr</span></a></li><li class="share-end"></li><li class="share-linkedin"><a rel="nofollow" data-shared="sharing-linkedin-278" class="share-linkedin sd-button share-icon" href="http://kartoza.com/generating-an-xyz-ascii-file-from-a-qgis-raster/?share=linkedin&amp;nb=1" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-pinterest"><a rel="nofollow" data-shared="sharing-pinterest-278" class="share-pinterest sd-button share-icon" href="http://kartoza.com/generating-an-xyz-ascii-file-from-a-qgis-raster/?share=pinterest&amp;nb=1" target="_blank" title="Click to share on Pinterest"><span>Pinterest</span></a></li><li class="share-end"></li><li class="share-email share-service-visible"><a rel="nofollow" data-shared="" class="share-email sd-button share-icon" href="http://kartoza.com/generating-an-xyz-ascii-file-from-a-qgis-raster/?share=email&amp;nb=1" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-print"><a rel="nofollow" data-shared="" class="share-print sd-button share-icon" href="http://kartoza.com/generating-an-xyz-ascii-file-from-a-qgis-raster/" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li><li class="share-end"></li></ul></div></div></div></div></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+		<span class="cat-links block">Posted in <a href="http://kartoza.com/category/fossgis/" rel="category tag">FOSSGIS</a>, <a href="http://kartoza.com/category/qgis/" rel="category tag">QGIS</a>.</span>	</footer><!-- #entry-meta -->
+	
+	</article><!-- #post-278 -->
+<article id="post-274" class="post-274 post type-post status-publish format-standard hentry category-fossgis category-qgis">
+		
+	<header class="page-header">
+	<h1 class="entry-title"><a href="http://kartoza.com/how-to-create-a-qgis-pdf-report-with-a-few-lines-of-python/" title="Permalink to How to create a QGIS PDF report with a few lines of python" rel="bookmark">How to create a QGIS PDF report with a few lines of python</a></h1>		<div class="entry-meta">
+			<span class="sep">Posted on </span><a href="http://kartoza.com/how-to-create-a-qgis-pdf-report-with-a-few-lines-of-python/" title="3:26 pm" rel="bookmark"><time class="entry-date" datetime="2015-03-01T15:26:19+00:00" pubdate="">March 1, 2015</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="http://kartoza.com/author/timlinux/" title="View all posts by Tim Sutton" rel="author">Tim Sutton</a></span></span>		<span class="sep"> | </span>
+		<span class="comments-link">
+			<a href="http://kartoza.com/how-to-create-a-qgis-pdf-report-with-a-few-lines-of-python/#disqus_thread" data-disqus-identifier="274 http://kartoza.com/?p=274">8 Comments</a>		</span>
+				</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content clearfix">
+		<p>Sometimes you want to automatically generate a report to reflect the latest state of your data. For example you may be capturing spatial data into a PostGIS database and want a snapshot of that every few hours expressed as a pdf report. This example shows you how you can quickly generate a pdf based on a QGIS project (.qgs file) and a QGIS template (.qpt file).</p>
+<p><script src="./Kartoza _ Open Source Geospatial Solutions_files/486793ad61db4c1dec9d.js"></script><link rel="stylesheet" href="./Kartoza _ Open Source Geospatial Solutions_files/embed-7346e9a735aaeeacede51d1efaad6208f95d9edbc222155878bfddc2da28fa87.css"></p><div id="gist19900757" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-pdf_generator-py" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-python">
+      <table class="highlight tab-size js-file-line-container table table-striped table-hover" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-pdf_generator-py-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-pdf_generator-py-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-c"># coding=utf-8</span></td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-pdf_generator-py-LC2" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-pdf_generator-py-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-c"># A simple demonstration of to generate a PDF using a QGIS project</span></td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-pdf_generator-py-LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-c"># and a QGIS layout template.</span></td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-pdf_generator-py-LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-c">#</span></td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-pdf_generator-py-LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c"># This code is public domain, use if for any purpose you see fit.</span></td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-pdf_generator-py-LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-c"># Tim Sutton 2015</span></td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-pdf_generator-py-LC8" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-pdf_generator-py-LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> sys</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-pdf_generator-py-LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> qgis.core <span class="pl-k">import</span> (</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-pdf_generator-py-LC11" class="blob-code blob-code-inner js-file-line">    QgsProject, QgsComposition, QgsApplication, QgsProviderRegistry)</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-pdf_generator-py-LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> qgis.gui <span class="pl-k">import</span> QgsMapCanvas, QgsLayerTreeMapCanvasBridge</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-pdf_generator-py-LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> PyQt4.QtCore <span class="pl-k">import</span> QFileInfo</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-pdf_generator-py-LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> PyQt4.QtXml <span class="pl-k">import</span> QDomDocument</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-pdf_generator-py-LC15" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-pdf_generator-py-LC16" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-pdf_generator-py-LC17" class="blob-code blob-code-inner js-file-line">gui_flag <span class="pl-k">=</span> <span class="pl-c1">True</span></td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-pdf_generator-py-LC18" class="blob-code blob-code-inner js-file-line">app <span class="pl-k">=</span> QgsApplication(sys.argv, gui_flag)</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-pdf_generator-py-LC19" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-pdf_generator-py-LC20" class="blob-code blob-code-inner js-file-line"><span class="pl-c"># Make sure QGIS_PREFIX_PATH is set in your env if needed!</span></td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-pdf_generator-py-LC21" class="blob-code blob-code-inner js-file-line">app.initQgis()</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-pdf_generator-py-LC22" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-pdf_generator-py-LC23" class="blob-code blob-code-inner js-file-line"><span class="pl-c"># Probably you want to tweak this</span></td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-pdf_generator-py-LC24" class="blob-code blob-code-inner js-file-line">project_path <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>project.qgs<span class="pl-pds">'</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-pdf_generator-py-LC25" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-pdf_generator-py-LC26" class="blob-code blob-code-inner js-file-line"><span class="pl-c"># and this</span></td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-pdf_generator-py-LC27" class="blob-code blob-code-inner js-file-line">template_path <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>template.qpt<span class="pl-pds">'</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-pdf_generator-py-LC28" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-pdf_generator-py-LC29" class="blob-code blob-code-inner js-file-line"><span class="pl-k">def</span> <span class="pl-en">make_pdf</span>():</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-pdf_generator-py-LC30" class="blob-code blob-code-inner js-file-line">    canvas <span class="pl-k">=</span> QgsMapCanvas()</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-pdf_generator-py-LC31" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"># Load our project</span></td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-pdf_generator-py-LC32" class="blob-code blob-code-inner js-file-line">    QgsProject.instance().read(QFileInfo(project_path))</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="file-pdf_generator-py-LC33" class="blob-code blob-code-inner js-file-line">    bridge <span class="pl-k">=</span> QgsLayerTreeMapCanvasBridge(</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="file-pdf_generator-py-LC34" class="blob-code blob-code-inner js-file-line">        QgsProject.instance().layerTreeRoot(), canvas)</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="file-pdf_generator-py-LC35" class="blob-code blob-code-inner js-file-line">    bridge.setCanvasLayers()</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="file-pdf_generator-py-LC36" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="file-pdf_generator-py-LC37" class="blob-code blob-code-inner js-file-line">    template_file <span class="pl-k">=</span> <span class="pl-v">file</span>(template_path)</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="file-pdf_generator-py-LC38" class="blob-code blob-code-inner js-file-line">    template_content <span class="pl-k">=</span> template_file.read()</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="file-pdf_generator-py-LC39" class="blob-code blob-code-inner js-file-line">    template_file.close()</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="file-pdf_generator-py-LC40" class="blob-code blob-code-inner js-file-line">    document <span class="pl-k">=</span> QDomDocument()</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="file-pdf_generator-py-LC41" class="blob-code blob-code-inner js-file-line">    document.setContent(template_content)</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="file-pdf_generator-py-LC42" class="blob-code blob-code-inner js-file-line">    composition <span class="pl-k">=</span> QgsComposition(canvas.mapSettings())</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="file-pdf_generator-py-LC43" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"># You can use this to replace any string like this [key]</span></td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="file-pdf_generator-py-LC44" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"># in the template with a new value. e.g. to replace</span></td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td id="file-pdf_generator-py-LC45" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"># [date] pass a map like this {'date': '1 Jan 2012'}</span></td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td id="file-pdf_generator-py-LC46" class="blob-code blob-code-inner js-file-line">    substitution_map <span class="pl-k">=</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td id="file-pdf_generator-py-LC47" class="blob-code blob-code-inner js-file-line">        <span class="pl-s"><span class="pl-pds">'</span>DATE_TIME_START<span class="pl-pds">'</span></span>: <span class="pl-s"><span class="pl-pds">'</span>foo<span class="pl-pds">'</span></span>,</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td id="file-pdf_generator-py-LC48" class="blob-code blob-code-inner js-file-line">        <span class="pl-s"><span class="pl-pds">'</span>DATE_TIME_END<span class="pl-pds">'</span></span>: <span class="pl-s"><span class="pl-pds">'</span>bar<span class="pl-pds">'</span></span>}</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td id="file-pdf_generator-py-LC49" class="blob-code blob-code-inner js-file-line">    composition.loadFromTemplate(document, substitution_map)</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td id="file-pdf_generator-py-LC50" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"># You must set the id in the template</span></td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L51" class="blob-num js-line-number" data-line-number="51"></td>
+        <td id="file-pdf_generator-py-LC51" class="blob-code blob-code-inner js-file-line">    map_item <span class="pl-k">=</span> composition.getComposerItemById(<span class="pl-s"><span class="pl-pds">'</span>map<span class="pl-pds">'</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L52" class="blob-num js-line-number" data-line-number="52"></td>
+        <td id="file-pdf_generator-py-LC52" class="blob-code blob-code-inner js-file-line">    map_item.setMapCanvas(canvas)</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L53" class="blob-num js-line-number" data-line-number="53"></td>
+        <td id="file-pdf_generator-py-LC53" class="blob-code blob-code-inner js-file-line">    map_item.zoomToExtent(canvas.extent())</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L54" class="blob-num js-line-number" data-line-number="54"></td>
+        <td id="file-pdf_generator-py-LC54" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"># You must set the id in the template</span></td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L55" class="blob-num js-line-number" data-line-number="55"></td>
+        <td id="file-pdf_generator-py-LC55" class="blob-code blob-code-inner js-file-line">    legend_item <span class="pl-k">=</span> composition.getComposerItemById(<span class="pl-s"><span class="pl-pds">'</span>legend<span class="pl-pds">'</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L56" class="blob-num js-line-number" data-line-number="56"></td>
+        <td id="file-pdf_generator-py-LC56" class="blob-code blob-code-inner js-file-line">    legend_item.updateLegend()</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L57" class="blob-num js-line-number" data-line-number="57"></td>
+        <td id="file-pdf_generator-py-LC57" class="blob-code blob-code-inner js-file-line">    composition.refreshItems()</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L58" class="blob-num js-line-number" data-line-number="58"></td>
+        <td id="file-pdf_generator-py-LC58" class="blob-code blob-code-inner js-file-line">    composition.exportAsPDF(<span class="pl-s"><span class="pl-pds">'</span>report.pdf<span class="pl-pds">'</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L59" class="blob-num js-line-number" data-line-number="59"></td>
+        <td id="file-pdf_generator-py-LC59" class="blob-code blob-code-inner js-file-line">    QgsProject.instance().clear()</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L60" class="blob-num js-line-number" data-line-number="60"></td>
+        <td id="file-pdf_generator-py-LC60" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L61" class="blob-num js-line-number" data-line-number="61"></td>
+        <td id="file-pdf_generator-py-LC61" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-pdf_generator-py-L62" class="blob-num js-line-number" data-line-number="62"></td>
+        <td id="file-pdf_generator-py-LC62" class="blob-code blob-code-inner js-file-line">make_pdf()</td>
+      </tr>
+</tbody></table>
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/timlinux/486793ad61db4c1dec9d/raw/e6ad30b03fa2353502df478e45108bc4f789f5ad/pdf_generator.py" style="float:right">view raw</a>
+        <a href="https://gist.github.com/timlinux/486793ad61db4c1dec9d#file-pdf_generator-py">pdf_generator.py</a>
+        hosted with <img draggable="false" class="emoji" alt="❤" src="./Kartoza _ Open Source Geospatial Solutions_files/2764.png" scale="0"> by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<p></p>
+<p>Using this approach you can generate all kinds of useful outputs without ever needing to open QGIS each time you generate the report. Simply create the needed project and template files and then run it like this:</p>
+<pre>python generate_pdf.py</pre>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li><a href="http://kartoza.com/#" class="sharing-anchor sd-button share-more"><span>Share</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-274" class="share-google-plus-1 sd-button share-icon" href="http://kartoza.com/how-to-create-a-qgis-pdf-report-with-a-few-lines-of-python/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-274" class="share-facebook sd-button share-icon" href="http://kartoza.com/how-to-create-a-qgis-pdf-report-with-a-few-lines-of-python/?share=facebook&amp;nb=1" target="_blank" title="Share on Facebook"><span>Facebook<span class="share-count">13</span></span></a></li><li class="share-end"></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-274" class="share-twitter sd-button share-icon" href="http://kartoza.com/how-to-create-a-qgis-pdf-report-with-a-few-lines-of-python/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-stumbleupon"><a rel="nofollow" data-shared="" class="share-stumbleupon sd-button share-icon" href="http://kartoza.com/how-to-create-a-qgis-pdf-report-with-a-few-lines-of-python/?share=stumbleupon&amp;nb=1" target="_blank" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon" href="http://kartoza.com/how-to-create-a-qgis-pdf-report-with-a-few-lines-of-python/?share=reddit&amp;nb=1" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-tumblr"><a rel="nofollow" data-shared="" class="share-tumblr sd-button share-icon" href="http://kartoza.com/how-to-create-a-qgis-pdf-report-with-a-few-lines-of-python/?share=tumblr&amp;nb=1" target="_blank" title="Click to share on Tumblr"><span>Tumblr</span></a></li><li class="share-end"></li><li class="share-linkedin"><a rel="nofollow" data-shared="sharing-linkedin-274" class="share-linkedin sd-button share-icon" href="http://kartoza.com/how-to-create-a-qgis-pdf-report-with-a-few-lines-of-python/?share=linkedin&amp;nb=1" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn<span class="share-count">11</span></span></a></li><li class="share-pinterest"><a rel="nofollow" data-shared="sharing-pinterest-274" class="share-pinterest sd-button share-icon" href="http://kartoza.com/how-to-create-a-qgis-pdf-report-with-a-few-lines-of-python/?share=pinterest&amp;nb=1" target="_blank" title="Click to share on Pinterest"><span>Pinterest</span></a></li><li class="share-end"></li><li class="share-email share-service-visible"><a rel="nofollow" data-shared="" class="share-email sd-button share-icon" href="http://kartoza.com/how-to-create-a-qgis-pdf-report-with-a-few-lines-of-python/?share=email&amp;nb=1" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-print"><a rel="nofollow" data-shared="" class="share-print sd-button share-icon" href="http://kartoza.com/how-to-create-a-qgis-pdf-report-with-a-few-lines-of-python/" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li><li class="share-end"></li></ul></div></div></div></div></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+		<span class="cat-links block">Posted in <a href="http://kartoza.com/category/fossgis/" rel="category tag">FOSSGIS</a>, <a href="http://kartoza.com/category/qgis/" rel="category tag">QGIS</a>.</span>	</footer><!-- #entry-meta -->
+	
+	</article><!-- #post-274 -->
+<article id="post-254" class="post-254 post type-post status-publish format-standard hentry category-fossgis category-geoserver category-opengeosuite category-postgis">
+		
+	<header class="page-header">
+	<h1 class="entry-title"><a href="http://kartoza.com/alternatives-to-google-maps-engine/" title="Permalink to Alternatives to Google Maps Engine" rel="bookmark">Alternatives to Google Maps Engine</a></h1>		<div class="entry-meta">
+			<span class="sep">Posted on </span><a href="http://kartoza.com/alternatives-to-google-maps-engine/" title="11:58 am" rel="bookmark"><time class="entry-date" datetime="2015-02-11T11:58:49+00:00" pubdate="">February 11, 2015</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="http://kartoza.com/author/gavin/" title="View all posts by Gavin Fleming" rel="author">Gavin Fleming</a></span></span>		<span class="sep"> | </span>
+		<span class="comments-link">
+			<a href="http://kartoza.com/alternatives-to-google-maps-engine/#disqus_thread" data-disqus-identifier="254 http://kartoza.com/?p=254">0 Comments</a>		</span>
+				</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content clearfix">
+		<p>Google will be supporting Google Maps Engine (GME) for only one more year. If your company uses GME or was thinking about it, you’ll need to consider alternatives. Kartoza offers various alternatives depending on your use case. We are BoundlessGeo partners and offer support for the OpenGeo Suite in southern Africa. For more details of the Google announcement, including various scenarios where you should consider the OpenGeo Suite, see <a title="OpenGeoSuite and GME" href="http://boundlessgeo.com/2015/02/opengeo-suite-google-maps-engine/" target="_blank">BoundlessGeo’s take on it</a>.&nbsp; Kartoza also offers development, support and training services across other components of the FOSS GIS stack that offer alternatives to Google and other proprietary products – we’d love to hear from you!</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li><a href="http://kartoza.com/#" class="sharing-anchor sd-button share-more"><span>Share</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-254" class="share-google-plus-1 sd-button share-icon" href="http://kartoza.com/alternatives-to-google-maps-engine/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-254" class="share-facebook sd-button share-icon" href="http://kartoza.com/alternatives-to-google-maps-engine/?share=facebook&amp;nb=1" target="_blank" title="Share on Facebook"><span>Facebook<span class="share-count">2</span></span></a></li><li class="share-end"></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-254" class="share-twitter sd-button share-icon" href="http://kartoza.com/alternatives-to-google-maps-engine/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-stumbleupon"><a rel="nofollow" data-shared="" class="share-stumbleupon sd-button share-icon" href="http://kartoza.com/alternatives-to-google-maps-engine/?share=stumbleupon&amp;nb=1" target="_blank" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon" href="http://kartoza.com/alternatives-to-google-maps-engine/?share=reddit&amp;nb=1" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-tumblr"><a rel="nofollow" data-shared="" class="share-tumblr sd-button share-icon" href="http://kartoza.com/alternatives-to-google-maps-engine/?share=tumblr&amp;nb=1" target="_blank" title="Click to share on Tumblr"><span>Tumblr</span></a></li><li class="share-end"></li><li class="share-linkedin"><a rel="nofollow" data-shared="sharing-linkedin-254" class="share-linkedin sd-button share-icon" href="http://kartoza.com/alternatives-to-google-maps-engine/?share=linkedin&amp;nb=1" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn<span class="share-count">6</span></span></a></li><li class="share-pinterest"><a rel="nofollow" data-shared="sharing-pinterest-254" class="share-pinterest sd-button share-icon" href="http://kartoza.com/alternatives-to-google-maps-engine/?share=pinterest&amp;nb=1" target="_blank" title="Click to share on Pinterest"><span>Pinterest</span></a></li><li class="share-end"></li><li class="share-email share-service-visible"><a rel="nofollow" data-shared="" class="share-email sd-button share-icon" href="http://kartoza.com/alternatives-to-google-maps-engine/?share=email&amp;nb=1" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-print"><a rel="nofollow" data-shared="" class="share-print sd-button share-icon" href="http://kartoza.com/alternatives-to-google-maps-engine/" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li><li class="share-end"></li></ul></div></div></div></div></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+		<span class="cat-links block">Posted in <a href="http://kartoza.com/category/fossgis/" rel="category tag">FOSSGIS</a>, <a href="http://kartoza.com/category/geoserver/" rel="category tag">GeoServer</a>, <a href="http://kartoza.com/category/opengeosuite/" rel="category tag">OpenGeoSuite</a>, <a href="http://kartoza.com/category/database/postgis/" rel="category tag">PostGIS</a>.</span>	</footer><!-- #entry-meta -->
+	
+	</article><!-- #post-254 -->
+<article id="post-251" class="post-251 post type-post status-publish format-standard hentry category-jobs">
+		
+	<header class="page-header">
+	<h1 class="entry-title"><a href="http://kartoza.com/opening-for-gis-generalist-spatial-it-engineer-at-kartoza/" title="Permalink to Opening for GIS generalist / spatial IT engineer at Kartoza" rel="bookmark">Opening for GIS generalist / spatial IT engineer at Kartoza</a></h1>		<div class="entry-meta">
+			<span class="sep">Posted on </span><a href="http://kartoza.com/opening-for-gis-generalist-spatial-it-engineer-at-kartoza/" title="11:35 am" rel="bookmark"><time class="entry-date" datetime="2015-02-10T11:35:50+00:00" pubdate="">February 10, 2015</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="http://kartoza.com/author/gavin/" title="View all posts by Gavin Fleming" rel="author">Gavin Fleming</a></span></span>		<span class="sep"> | </span>
+		<span class="comments-link">
+			<a href="http://kartoza.com/opening-for-gis-generalist-spatial-it-engineer-at-kartoza/#disqus_thread" data-disqus-identifier="251 http://kartoza.com/?p=251">0 Comments</a>		</span>
+				</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content clearfix">
+		<p>Kartoza is seeking GIS staff. We have a range of projects and challenges and will tailor the post to suit the ideal candidate.</p>
+<p>Kartoza does a variety of work with a strong spatial component for a local and international clientèle and we’re also working on our own ideas. We do desktop GIS, web map servers, enterprise deployments, cartography, spatial data management, training and support. We use FOSS tools and produce mostly FOSS outputs. We have a very ‘open’ philosophy.</p>
+<p>You will be organised, driven, productive, enjoy working in a changeable, informal environment and enjoy learning. Working in teams with software developers will appeal to you. If you consider yourself to be a power-user you must be comfortable with scripts and the command line. If you’re not a power user yet you must want to become one.</p>
+<p>As this is a small company, you will be required to take on multiple projects and manage your time effectively. You will be anchored in an office in Paarl with the possibility of telecommuting. We have a fairly flat structure where your opinion counts. Your initiative and input into internal projects will be rewarded.</p>
+<p>You should find your time at Kartoza enjoyable, rewarding and fulfilling, with a positive work-life balance. The equipment we provide won’t slow you down and we have progressive terms of service.</p>
+<p><strong>Minimum skills:</strong></p>
+<ul>
+<li>a flair and passion for geography and spatial thinking</li>
+<li>Training or experience in
+<ul>
+<li>geography</li>
+<li>computer science</li>
+<li>electronic engineering</li>
+<li>GIS</li>
+<li>IT</li>
+</ul>
+</li>
+</ul>
+<p><strong>Extra skills:</strong></p>
+<ul>
+<li>QGIS</li>
+<li>Python</li>
+<li>Linux, Bash, server skills</li>
+<li>SQL</li>
+<li>Any other tools in the FOSS GIS stack (GDAL/OGR, Geoserver, etc.)</li>
+<li>Spatial databases, especially PostgreSQL / PostGIS</li>
+<li>JavaScript</li>
+<li>cartography, design</li>
+<li>teaching, training</li>
+<li>OGC standards</li>
+</ul>
+<p><strong>To apply, please send the following to info@kartoza.com before 20 February 2015</strong></p>
+<ul>
+<li>your CV including your complete study and work history, 2 references, SA residence status</li>
+<li>examples of your OWN work, e.g. github, websites, systems, maps, models, working code, etc.</li>
+<li>your salary expectation</li>
+<li>when you are available to start</li>
+</ul>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li><a href="http://kartoza.com/#" class="sharing-anchor sd-button share-more"><span>Share</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-251" class="share-google-plus-1 sd-button share-icon" href="http://kartoza.com/opening-for-gis-generalist-spatial-it-engineer-at-kartoza/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-251" class="share-facebook sd-button share-icon" href="http://kartoza.com/opening-for-gis-generalist-spatial-it-engineer-at-kartoza/?share=facebook&amp;nb=1" target="_blank" title="Share on Facebook"><span>Facebook<span class="share-count">1</span></span></a></li><li class="share-end"></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-251" class="share-twitter sd-button share-icon" href="http://kartoza.com/opening-for-gis-generalist-spatial-it-engineer-at-kartoza/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-stumbleupon"><a rel="nofollow" data-shared="" class="share-stumbleupon sd-button share-icon" href="http://kartoza.com/opening-for-gis-generalist-spatial-it-engineer-at-kartoza/?share=stumbleupon&amp;nb=1" target="_blank" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon" href="http://kartoza.com/opening-for-gis-generalist-spatial-it-engineer-at-kartoza/?share=reddit&amp;nb=1" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-tumblr"><a rel="nofollow" data-shared="" class="share-tumblr sd-button share-icon" href="http://kartoza.com/opening-for-gis-generalist-spatial-it-engineer-at-kartoza/?share=tumblr&amp;nb=1" target="_blank" title="Click to share on Tumblr"><span>Tumblr</span></a></li><li class="share-end"></li><li class="share-linkedin"><a rel="nofollow" data-shared="sharing-linkedin-251" class="share-linkedin sd-button share-icon" href="http://kartoza.com/opening-for-gis-generalist-spatial-it-engineer-at-kartoza/?share=linkedin&amp;nb=1" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn<span class="share-count">14</span></span></a></li><li class="share-pinterest"><a rel="nofollow" data-shared="sharing-pinterest-251" class="share-pinterest sd-button share-icon" href="http://kartoza.com/opening-for-gis-generalist-spatial-it-engineer-at-kartoza/?share=pinterest&amp;nb=1" target="_blank" title="Click to share on Pinterest"><span>Pinterest</span></a></li><li class="share-end"></li><li class="share-email share-service-visible"><a rel="nofollow" data-shared="" class="share-email sd-button share-icon" href="http://kartoza.com/opening-for-gis-generalist-spatial-it-engineer-at-kartoza/?share=email&amp;nb=1" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-print"><a rel="nofollow" data-shared="" class="share-print sd-button share-icon" href="http://kartoza.com/opening-for-gis-generalist-spatial-it-engineer-at-kartoza/" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li><li class="share-end"></li></ul></div></div></div></div></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+		<span class="cat-links block">Posted in <a href="http://kartoza.com/category/jobs/" rel="category tag">Jobs</a>.</span>	</footer><!-- #entry-meta -->
+	
+	</article><!-- #post-251 -->
+<article id="post-247" class="post-247 post type-post status-publish format-standard hentry category-jobs">
+		
+	<header class="page-header">
+	<h1 class="entry-title"><a href="http://kartoza.com/opening-for-python-developer-at-kartoza/" title="Permalink to Opening for Python developer at Kartoza" rel="bookmark">Opening for Python developer at Kartoza</a></h1>		<div class="entry-meta">
+			<span class="sep">Posted on </span><a href="http://kartoza.com/opening-for-python-developer-at-kartoza/" title="11:54 am" rel="bookmark"><time class="entry-date" datetime="2015-02-09T11:54:58+00:00" pubdate="">February 9, 2015</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="http://kartoza.com/author/gavin/" title="View all posts by Gavin Fleming" rel="author">Gavin Fleming</a></span></span>		<span class="sep"> | </span>
+		<span class="comments-link">
+			<a href="http://kartoza.com/opening-for-python-developer-at-kartoza/#disqus_thread" data-disqus-identifier="247 http://kartoza.com/?p=247">0 Comments</a>		</span>
+				</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content clearfix">
+		<p>Kartoza is on the lookout for developers. We have a range of projects and challenges and will tailor the post to suit the ideal candidate.</p>
+<p>Kartoza does desktop, server and web development, testing and support for a local and international clientèle and we’re also working on our own ideas. Most of our projects have a spatial component. We use FOSS tools and produce mostly FOSS outputs. We have a very ‘open’ philosophy.</p>
+<p>You will be organised, driven, productive, enjoy working in a changeable, informal environment and enjoy learning. Terms like agile, scrum, sprints, git, kanban will appeal to you.</p>
+<p>As this is a small company, you will be required to take on multiple projects and manage your time. You will work from our office in Paarl with the possibility of telecommuting. We have an international team with a fairly flat structure where your opinion counts. Your initiative and input into internal projects will be rewarded.</p>
+<p>You should find your time at Kartoza enjoyable, rewarding and fulfilling, with a positive work-life balance. The equipment we provide won’t slow you down and we have progressive terms of service.</p>
+<p><strong>Minimum skills:</strong></p>
+<ul>
+<li>Python</li>
+<li>SQL</li>
+<li>Linux</li>
+</ul>
+<p><strong>Extra skills:</strong></p>
+<ul>
+<li>Django / GeoDjango</li>
+<li>GIS (especially with the FOSS GIS stack)</li>
+<li>QGIS Python API and plugin development</li>
+<li>Spatial databases, especially PostgreSQL / PostGIS</li>
+<li>CSS3 / HTML5</li>
+<li>JavaScript</li>
+<li>Server skills, including working with containers</li>
+<li>mobile application development</li>
+<li>UX design</li>
+<li>OGC standards</li>
+<li>C++</li>
+<li>Qt</li>
+</ul>
+<p><strong>To apply, please send the following to info@kartoza.com before 20 February 2015</strong></p>
+<ul>
+<li>your CV including your complete study and work history, 2 references, SA residence status</li>
+<li>examples of your OWN coding work, e.g. github, websites, apps, QGIS plugins, working code, etc.</li>
+<li>your salary expectation</li>
+<li>when you are available to start</li>
+</ul>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li><a href="http://kartoza.com/#" class="sharing-anchor sd-button share-more"><span>Share</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-247" class="share-google-plus-1 sd-button share-icon" href="http://kartoza.com/opening-for-python-developer-at-kartoza/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-247" class="share-facebook sd-button share-icon" href="http://kartoza.com/opening-for-python-developer-at-kartoza/?share=facebook&amp;nb=1" target="_blank" title="Share on Facebook"><span>Facebook<span class="share-count">1</span></span></a></li><li class="share-end"></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-247" class="share-twitter sd-button share-icon" href="http://kartoza.com/opening-for-python-developer-at-kartoza/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-stumbleupon"><a rel="nofollow" data-shared="" class="share-stumbleupon sd-button share-icon" href="http://kartoza.com/opening-for-python-developer-at-kartoza/?share=stumbleupon&amp;nb=1" target="_blank" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon" href="http://kartoza.com/opening-for-python-developer-at-kartoza/?share=reddit&amp;nb=1" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-tumblr"><a rel="nofollow" data-shared="" class="share-tumblr sd-button share-icon" href="http://kartoza.com/opening-for-python-developer-at-kartoza/?share=tumblr&amp;nb=1" target="_blank" title="Click to share on Tumblr"><span>Tumblr</span></a></li><li class="share-end"></li><li class="share-linkedin"><a rel="nofollow" data-shared="sharing-linkedin-247" class="share-linkedin sd-button share-icon" href="http://kartoza.com/opening-for-python-developer-at-kartoza/?share=linkedin&amp;nb=1" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn<span class="share-count">11</span></span></a></li><li class="share-pinterest"><a rel="nofollow" data-shared="sharing-pinterest-247" class="share-pinterest sd-button share-icon" href="http://kartoza.com/opening-for-python-developer-at-kartoza/?share=pinterest&amp;nb=1" target="_blank" title="Click to share on Pinterest"><span>Pinterest</span></a></li><li class="share-end"></li><li class="share-email share-service-visible"><a rel="nofollow" data-shared="" class="share-email sd-button share-icon" href="http://kartoza.com/opening-for-python-developer-at-kartoza/?share=email&amp;nb=1" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-print"><a rel="nofollow" data-shared="" class="share-print sd-button share-icon" href="http://kartoza.com/opening-for-python-developer-at-kartoza/" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li><li class="share-end"></li></ul></div></div></div></div></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+		<span class="cat-links block">Posted in <a href="http://kartoza.com/category/jobs/" rel="category tag">Jobs</a>.</span>	</footer><!-- #entry-meta -->
+	
+	</article><!-- #post-247 -->
+<article id="post-235" class="post-235 post type-post status-publish format-standard hentry category-education category-qgis">
+		
+	<header class="page-header">
+	<h1 class="entry-title"><a href="http://kartoza.com/qgis-course-at-afqua/" title="Permalink to QGIS course at AfQUA" rel="bookmark">QGIS course at AfQUA</a></h1>		<div class="entry-meta">
+			<span class="sep">Posted on </span><a href="http://kartoza.com/qgis-course-at-afqua/" title="11:58 am" rel="bookmark"><time class="entry-date" datetime="2015-02-08T11:58:24+00:00" pubdate="">February 8, 2015</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="http://kartoza.com/author/gavin/" title="View all posts by Gavin Fleming" rel="author">Gavin Fleming</a></span></span>		<span class="sep"> | </span>
+		<span class="comments-link">
+			<a href="http://kartoza.com/qgis-course-at-afqua/#disqus_thread" data-disqus-identifier="235 http://kartoza.com/?p=235">0 Comments</a>		</span>
+				</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content clearfix">
+		<p>Kartoza has just wrapped up a three-day Introduction to QGIS course that we gave <em>pro bono</em> at The African Quaternary: Environments, Ecology and Humans conference in Cape Town (<a title="AfQUA 2015" href="http://afqua2015.com/workshops/" target="_blank">AfQUA2015</a>). Thank you to Kelly Kirsten from the local organising committee at the University of Cape Town for inviting us. Admire Nyakudya presented to about fifteen conference delegates from around the world. Attendees ran QGIS 2.6.1 on their own notebooks on the operating system of their choice. Some already use QGIS, some were experiencing QGIS for the first time and some some wanted to compare it with ArcGIS. The course content was guided largely by the <a title="QGIS training manual" href="http://docs.qgis.org/2.6/en/docs/training_manual/" target="_blank">QGIS training manual</a> but as we usually do, adapted for the requirements, interests and pace of the class.</p>
+<p>&nbsp;</p>
+<p><a data-postid="fsg_post_235" data-imgid="242" class="thumbnail" href="./Kartoza _ Open Source Geospatial Solutions_files/IMG-20150206-WA0000.jpg"><img class="aligncenter wp-image-242 size-full" src="./Kartoza _ Open Source Geospatial Solutions_files/IMG-20150206-WA0000.jpg" alt="Kartoza QGIS class at AfQUA 2015" width="946" height="602" scale="0"></a></p>
+<p><a data-postid="fsg_post_235" data-imgid="243" class="thumbnail" href="./Kartoza _ Open Source Geospatial Solutions_files/IMG-20150206-WA0001.jpg"><img class="aligncenter wp-image-243 size-full" src="./Kartoza _ Open Source Geospatial Solutions_files/IMG-20150206-WA0001.jpg" alt="Admire presenting QGIS workshop at AfQUA" width="894" height="498" scale="0"></a></p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li><a href="http://kartoza.com/#" class="sharing-anchor sd-button share-more"><span>Share</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-235" class="share-google-plus-1 sd-button share-icon" href="http://kartoza.com/qgis-course-at-afqua/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-235" class="share-facebook sd-button share-icon" href="http://kartoza.com/qgis-course-at-afqua/?share=facebook&amp;nb=1" target="_blank" title="Share on Facebook"><span>Facebook<span class="share-count">1</span></span></a></li><li class="share-end"></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-235" class="share-twitter sd-button share-icon" href="http://kartoza.com/qgis-course-at-afqua/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-stumbleupon"><a rel="nofollow" data-shared="" class="share-stumbleupon sd-button share-icon" href="http://kartoza.com/qgis-course-at-afqua/?share=stumbleupon&amp;nb=1" target="_blank" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon" href="http://kartoza.com/qgis-course-at-afqua/?share=reddit&amp;nb=1" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-tumblr"><a rel="nofollow" data-shared="" class="share-tumblr sd-button share-icon" href="http://kartoza.com/qgis-course-at-afqua/?share=tumblr&amp;nb=1" target="_blank" title="Click to share on Tumblr"><span>Tumblr</span></a></li><li class="share-end"></li><li class="share-linkedin"><a rel="nofollow" data-shared="sharing-linkedin-235" class="share-linkedin sd-button share-icon" href="http://kartoza.com/qgis-course-at-afqua/?share=linkedin&amp;nb=1" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-pinterest"><a rel="nofollow" data-shared="sharing-pinterest-235" class="share-pinterest sd-button share-icon" href="http://kartoza.com/qgis-course-at-afqua/?share=pinterest&amp;nb=1" target="_blank" title="Click to share on Pinterest"><span>Pinterest</span></a></li><li class="share-end"></li><li class="share-email share-service-visible"><a rel="nofollow" data-shared="" class="share-email sd-button share-icon" href="http://kartoza.com/qgis-course-at-afqua/?share=email&amp;nb=1" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-print"><a rel="nofollow" data-shared="" class="share-print sd-button share-icon" href="http://kartoza.com/qgis-course-at-afqua/" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li><li class="share-end"></li></ul></div></div></div></div></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+		<span class="cat-links block">Posted in <a href="http://kartoza.com/category/education/" rel="category tag">Education</a>, <a href="http://kartoza.com/category/qgis/" rel="category tag">QGIS</a>.</span>	</footer><!-- #entry-meta -->
+	
+	</article><!-- #post-235 -->
+<article id="post-218" class="post-218 post type-post status-publish format-standard hentry category-qgis tag-python tag-qgis">
+		
+	<header class="page-header">
+	<h1 class="entry-title"><a href="http://kartoza.com/how-to-load-a-qgis-project-in-python/" title="Permalink to How to load a QGIS project in python" rel="bookmark">How to load a QGIS project in python</a></h1>		<div class="entry-meta">
+			<span class="sep">Posted on </span><a href="http://kartoza.com/how-to-load-a-qgis-project-in-python/" title="4:07 pm" rel="bookmark"><time class="entry-date" datetime="2015-01-21T16:07:38+00:00" pubdate="">January 21, 2015</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="http://kartoza.com/author/timlinux/" title="View all posts by Tim Sutton" rel="author">Tim Sutton</a></span></span>		<span class="sep"> | </span>
+		<span class="comments-link">
+			<a href="http://kartoza.com/how-to-load-a-qgis-project-in-python/#disqus_thread" data-disqus-identifier="218 http://kartoza.com/?p=218">2 Comments</a>		</span>
+				</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content clearfix">
+		<p>Today in a project we are working on we wanted to load a QGIS project. It takes &nbsp;surprisingly few lines of code to make a small standalone application that loads a project and then shows it as a map in a window like this:</p>
+<p><a data-postid="fsg_post_218" data-imgid="219" class="thumbnail" href="./Kartoza _ Open Source Geospatial Solutions_files/show_project.py_001.png"><img class="aligncenter size-full wp-image-219" src="./Kartoza _ Open Source Geospatial Solutions_files/show_project.py_001.png" alt="QGIS project in a standalone app" width="634" height="512" scale="0"></a></p>
+<p>&nbsp;</p>
+<p>Here is the code I wrote to produce this:<br>
+<script src="./Kartoza _ Open Source Geospatial Solutions_files/22935c16da4eda92762f.js"></script><link rel="stylesheet" href="./Kartoza _ Open Source Geospatial Solutions_files/embed-7346e9a735aaeeacede51d1efaad6208f95d9edbc222155878bfddc2da28fa87.css"></p><div id="gist18575689" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-show_project-py" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-python">
+      <table class="highlight tab-size js-file-line-container table table-striped table-hover" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-show_project-py-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-show_project-py-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-c"># coding=utf-8</span></td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-show_project-py-LC2" class="blob-code blob-code-inner js-file-line"> </td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-show_project-py-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-c"># A simple demonstration of how to load a QGIS project and then</span></td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-show_project-py-LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-c"># show it in a widget.</span></td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-show_project-py-LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-c"># This code is public domain, use if for any purpose you see fit.</span></td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-show_project-py-LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c"># Tim Sutton 2015</span></td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-show_project-py-LC7" class="blob-code blob-code-inner js-file-line"> </td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-show_project-py-LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> os</td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-show_project-py-LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> qgis.core <span class="pl-k">import</span> QgsProject</td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-show_project-py-LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> qgis.gui <span class="pl-k">import</span> QgsMapCanvas, QgsLayerTreeMapCanvasBridge</td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-show_project-py-LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> qgis.core.contextmanagers <span class="pl-k">import</span> qgisapp</td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-show_project-py-LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> PyQt4.QtCore <span class="pl-k">import</span> QFileInfo</td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-show_project-py-LC13" class="blob-code blob-code-inner js-file-line"> </td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-show_project-py-LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-k">with</span> qgisapp():</td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-show_project-py-LC15" class="blob-code blob-code-inner js-file-line">    project_path <span class="pl-k">=</span> os.path.dirname(<span class="pl-c1">__file__</span>) <span class="pl-k">+</span> os.path.sep <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span>test.qgs<span class="pl-pds">'</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-show_project-py-LC16" class="blob-code blob-code-inner js-file-line">    canvas <span class="pl-k">=</span> QgsMapCanvas(<span class="pl-c1">None</span>)  <span class="pl-c"># will reparent it to widget via layout</span></td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-show_project-py-LC17" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-show_project-py-LC18" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"># Load our project</span></td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-show_project-py-LC19" class="blob-code blob-code-inner js-file-line">    bridge <span class="pl-k">=</span> QgsLayerTreeMapCanvasBridge(</td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-show_project-py-LC20" class="blob-code blob-code-inner js-file-line">        QgsProject.instance().layerTreeRoot(), canvas)</td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-show_project-py-LC21" class="blob-code blob-code-inner js-file-line">    QgsProject.instance().read(QFileInfo(project_path))</td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-show_project-py-LC22" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-show_project-py-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-show_project-py-LC23" class="blob-code blob-code-inner js-file-line">    canvas.show()</td>
+      </tr>
+</tbody></table>
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/timlinux/22935c16da4eda92762f/raw/9e639fed2556ac9d357f83a6c85424d399a7e328/show_project.py" style="float:right">view raw</a>
+        <a href="https://gist.github.com/timlinux/22935c16da4eda92762f#file-show_project-py">show_project.py</a>
+        hosted with <img draggable="false" class="emoji" alt="❤" src="./Kartoza _ Open Source Geospatial Solutions_files/2764.png" scale="0"> by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<br>
+The main bit of magic is the&nbsp;QgsLayerTreeMapCanvasBridge class which will convert your project into a layer tree so that the layers appear in the canvas. If you ever need to make a standalone python application with a nice map in it, consider using the QGIS API to do it!<p></p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li><a href="http://kartoza.com/#" class="sharing-anchor sd-button share-more"><span>Share</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-218" class="share-google-plus-1 sd-button share-icon" href="http://kartoza.com/how-to-load-a-qgis-project-in-python/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-218" class="share-facebook sd-button share-icon" href="http://kartoza.com/how-to-load-a-qgis-project-in-python/?share=facebook&amp;nb=1" target="_blank" title="Share on Facebook"><span>Facebook<span class="share-count">2</span></span></a></li><li class="share-end"></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-218" class="share-twitter sd-button share-icon" href="http://kartoza.com/how-to-load-a-qgis-project-in-python/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-stumbleupon"><a rel="nofollow" data-shared="" class="share-stumbleupon sd-button share-icon" href="http://kartoza.com/how-to-load-a-qgis-project-in-python/?share=stumbleupon&amp;nb=1" target="_blank" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon" href="http://kartoza.com/how-to-load-a-qgis-project-in-python/?share=reddit&amp;nb=1" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-tumblr"><a rel="nofollow" data-shared="" class="share-tumblr sd-button share-icon" href="http://kartoza.com/how-to-load-a-qgis-project-in-python/?share=tumblr&amp;nb=1" target="_blank" title="Click to share on Tumblr"><span>Tumblr</span></a></li><li class="share-end"></li><li class="share-linkedin"><a rel="nofollow" data-shared="sharing-linkedin-218" class="share-linkedin sd-button share-icon" href="http://kartoza.com/how-to-load-a-qgis-project-in-python/?share=linkedin&amp;nb=1" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn<span class="share-count">4</span></span></a></li><li class="share-pinterest"><a rel="nofollow" data-shared="sharing-pinterest-218" class="share-pinterest sd-button share-icon" href="http://kartoza.com/how-to-load-a-qgis-project-in-python/?share=pinterest&amp;nb=1" target="_blank" title="Click to share on Pinterest"><span>Pinterest</span></a></li><li class="share-end"></li><li class="share-email share-service-visible"><a rel="nofollow" data-shared="" class="share-email sd-button share-icon" href="http://kartoza.com/how-to-load-a-qgis-project-in-python/?share=email&amp;nb=1" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-print"><a rel="nofollow" data-shared="" class="share-print sd-button share-icon" href="http://kartoza.com/how-to-load-a-qgis-project-in-python/" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li><li class="share-end"></li></ul></div></div></div></div></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+		<span class="cat-links block">Posted in <a href="http://kartoza.com/category/qgis/" rel="category tag">QGIS</a>.</span>	</footer><!-- #entry-meta -->
+	
+	</article><!-- #post-218 -->
+<nav class="pagination pagination-centered clearfix"><ul class="page-numbers">
+	<li><span class="page-numbers current">1</span></li>
+	<li><a class="page-numbers" href="http://kartoza.com/page/2/">2</a></li>
+	<li><a class="page-numbers" href="http://kartoza.com/page/3/">3</a></li>
+	<li><a class="next page-numbers" href="http://kartoza.com/page/2/">Next »</a></li>
+</ul>
+</nav>	</div><!-- #content -->
+	</section><!-- #primary -->
+
+<section id="secondary" class="widget-area span4" role="complementary">
+	<aside id="text-2" class="widget well widget_text"><h2 class="widget-title">Welcome to Kartoza</h2>			<div class="textwidget">We are Free and Open Source GIS (FOSSGIS) Service providers providing a global service to individuals, companies and governments around the world who are looking to leverage the power of the Free Software movement to  solve geospatial problems.</div>
+		</aside><aside id="metodiew_simple_authors_widget-2" class="widget well widget_metodiew_simple_authors_widget"><h2 class="widget-title">Kartoza Bloggers</h2><ul class="sbaw_authors"><li class="sbaw_author"><div><img alt="" src="./Kartoza _ Open Source Geospatial Solutions_files/e3fa353ba119b9f627f48c4aeb3e255e" srcset="http://2.gravatar.com/avatar/e3fa353ba119b9f627f48c4aeb3e255e?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo grav-hashed grav-hijack" height="40" width="40" originals="40" src-orig="http://2.gravatar.com/avatar/e3fa353ba119b9f627f48c4aeb3e255e?s=40&amp;d=mm&amp;r=g" scale="2" id="grav-e3fa353ba119b9f627f48c4aeb3e255e-0"></div><a href="http://kartoza.com/author/admire/" title="View Admire Nyakudya archive">Admire Nyakudya (1)</a></li><li class="sbaw_author"><div><img alt="" src="./Kartoza _ Open Source Geospatial Solutions_files/95d16ce05e08bacbe875e7b2e0624a44" srcset="http://0.gravatar.com/avatar/95d16ce05e08bacbe875e7b2e0624a44?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo grav-hashed grav-hijack" height="40" width="40" originals="40" src-orig="http://0.gravatar.com/avatar/95d16ce05e08bacbe875e7b2e0624a44?s=40&amp;d=mm&amp;r=g" scale="2" id="grav-95d16ce05e08bacbe875e7b2e0624a44-0"></div><a href="http://kartoza.com/author/gavin/" title="View Gavin Fleming archive">Gavin Fleming (5)</a></li><li class="sbaw_author"><div><img alt="" src="./Kartoza _ Open Source Geospatial Solutions_files/3fef66db37b0d0cc9b57f0033e4bc91d" srcset="http://0.gravatar.com/avatar/3fef66db37b0d0cc9b57f0033e4bc91d?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo grav-hashed grav-hijack" height="40" width="40" originals="40" src-orig="http://0.gravatar.com/avatar/3fef66db37b0d0cc9b57f0033e4bc91d?s=40&amp;d=mm&amp;r=g" scale="2" id="grav-3fef66db37b0d0cc9b57f0033e4bc91d-0"></div><a href="http://kartoza.com/author/timlinux/" title="View Tim Sutton archive">Tim Sutton (16)</a></li></ul></aside>		<aside id="recent-posts-2" class="widget well widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
+					<li>
+				<a href="http://kartoza.com/report-back-on-the-first-qgis-user-conference-in-nodebo-denmark/">Report back on the first QGIS User Conference in Nødebo, Denmark</a>
+						</li>
+					<li>
+				<a href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/">How to run a Linux GUI application on OSX using Docker</a>
+						</li>
+					<li>
+				<a href="http://kartoza.com/7-tips-for-making-productive-use-of-docker/">7 tips for making productive use of docker</a>
+						</li>
+					<li>
+				<a href="http://kartoza.com/generating-an-xyz-ascii-file-from-a-qgis-raster/">Generating an XYZ ASCII file from a QGIS raster</a>
+						</li>
+					<li>
+				<a href="http://kartoza.com/how-to-create-a-qgis-pdf-report-with-a-few-lines-of-python/">How to create a QGIS PDF report with a few lines of python</a>
+						</li>
+				</ul>
+		</aside><aside id="youtube-channel-2" class="widget well widget_youtube-channel"><h2 class="widget-title">Kartoza on YouTube</h2>Oops, something went wrong.<!-- YTC ERROR:
+YouTube Channel version 3+ requires YouTube DATA API Key to work. Learn more here.
+-->
+</aside><aside id="text-3" class="widget well widget_text">			<div class="textwidget"><!-- Place this tag where you want the +1 button to render. -->
+<div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 300px; height: 24px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 300px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1456351406234" name="I0_1456351406234" src="./Kartoza _ Open Source Geospatial Solutions_files/fastbutton.html" data-gapiattached="true" title="+1"></iframe></div>
+
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<!-- Place this tag where you want the widget to render. -->
+<div id="___person_0" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 300px; height: 106px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 300px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 106px;" tabindex="0" vspace="0" width="100%" id="I1_1456351406248" name="I1_1456351406248" src="./Kartoza _ Open Source Geospatial Solutions_files/person.html" data-gapiattached="true" title="+Badge"></iframe></div>
+
+<!-- Place this tag after the last widget tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script></div>
+		</aside><aside id="category_rss_widgets" class="widget well widget_cat_spec_rss"><h2 class="widget-title">Category Specific RSS</h2><div class="cat_specific_rss"><ul class="cat_show_image">	<li class="cat-item cat-item-5"><a href="http://kartoza.com/category/database/feed/">Database</a> (3) <ul class="children"> 	<li class="cat-item cat-item-10"><a href="http://kartoza.com/category/database/postgis/feed/">PostGIS</a> (2) </li> </ul> </li> 	<li class="cat-item cat-item-9"><a href="http://kartoza.com/category/docker/feed/">Docker</a> (4) </li> 	<li class="cat-item cat-item-3"><a href="http://kartoza.com/category/education/feed/">Education</a> (3) </li> 	<li class="cat-item cat-item-4"><a href="http://kartoza.com/category/fossgis/feed/" title="Anything to do with open source GIS">FOSSGIS</a> (8) </li> 	<li class="cat-item cat-item-11"><a href="http://kartoza.com/category/geoserver/feed/">GeoServer</a> (2) </li> 	<li class="cat-item cat-item-6"><a href="http://kartoza.com/category/javascript/feed/">Javascript</a> (2) <ul class="children"> 	<li class="cat-item cat-item-7"><a href="http://kartoza.com/category/javascript/leaflet/feed/">Leaflet</a> (1) </li> </ul> </li> 	<li class="cat-item cat-item-19"><a href="http://kartoza.com/category/jobs/feed/">Jobs</a> (2) </li> 	<li class="cat-item cat-item-20"><a href="http://kartoza.com/category/opengeosuite/feed/">OpenGeoSuite</a> (1) </li> 	<li class="cat-item cat-item-2"><a href="http://kartoza.com/category/qgis/feed/">QGIS</a> (13) </li> 	<li class="cat-item cat-item-1"><a href="http://kartoza.com/category/uncategorized/feed/">Uncategorized</a> (1) </li> </ul></div></aside></section><!-- #secondary .widget-area -->
+				<footer id="colophon" role="contentinfo" class="span12">
+										<div id="page-footer" class="well clearfix">
+						<span class="credits alignleft">© 2016 <a href="http://kartoza.com/">Kartoza</a>, all rights reserved.</span>						<div id="site-generator">
+							<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" target="_blank" rel="generator">Proudly powered by WordPress</a>
+						</div>
+					</div><!-- #page-footer .well .clearfix -->
+									</footer><!-- #colophon -->
+							</div><!-- #page -->
+		</div><div></div><!-- .container -->
+	<!-- 67 queries. 0.250 seconds. -->
+	        <script type="text/javascript">
+        // <![CDATA[
+        var disqus_shortname = 'kartoza';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) { url = url[0]; }
+                    else { url = url[1]; }
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); 
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        // ]]>
+        </script>
+        <script type="text/javascript" src="./Kartoza _ Open Source Geospatial Solutions_files/galleria-1.4.2.min.js"></script>
+<script type="text/javascript" src="./Kartoza _ Open Source Geospatial Solutions_files/galleria-fs.js"></script>
+<script type="text/javascript" src="./Kartoza _ Open Source Geospatial Solutions_files/galleria-fs-theme.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var myAjax = {"ajaxurl":"http:\/\/kartoza.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Kartoza _ Open Source Geospatial Solutions_files/main.js"></script>
+<script type="text/javascript" src="./Kartoza _ Open Source Geospatial Solutions_files/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="./Kartoza _ Open Source Geospatial Solutions_files/youtube-channel.min.js"></script>
+<script type="text/javascript" src="./Kartoza _ Open Source Geospatial Solutions_files/devicepx-jetpack.js"></script>
+<script type="text/javascript" src="./Kartoza _ Open Source Geospatial Solutions_files/gprofiles.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Kartoza _ Open Source Geospatial Solutions_files/wpgroho.js"></script>
+<script type="text/javascript" src="./Kartoza _ Open Source Geospatial Solutions_files/bootstrap.min.js"></script>
+<script type="text/javascript" src="./Kartoza _ Open Source Geospatial Solutions_files/the-bootstrap.min.js"></script>
+<div id="galleria"></div><script>fullscreen_galleria_postid=319;
+fsg_settings = {"theme":"b","transition":"slide","overlay_time":2000,"show_title":true,"show_caption":false,"show_description":true,"show_camera_info":true,"show_thumbnails":true,"show_permalink":true,"show_sharing":false,"show_attachment":true,"show_map":true,"image_nav":false,"auto_start_slideshow":false,"true_fullscreen":false,"load_on_demand":false,"w3tc":false,"load_in_header":false};
+fullscreen_galleria_attachment=false;
+fsg_json = {
+fsg_post_301: [
+{id: 305, image: 'http://kartoza.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-13-at-23.40.21.png', thumb: 'http://kartoza.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-13-at-23.40.21-150x150.png', permalink: '<div class="galleria-layeritem"><a title="Permalink" href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/#305"><div class="galleria-link-bookmark"></div></a></div>', layer: '<div class="galleria-infolayer"><div class="galleria-layeritem" style="padding-right: 20px;"><h1>Screen Shot 2015-04-13 at 23.40.21</h1></div><div class="galleria-layeritem"><a title="Permalink" href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/#305"><div class="galleria-link-bookmark"></div></a></div><div class="galleria-layeritem" style="padding-right: 20px;"></div>'},
+{id: 306, image: 'http://kartoza.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-13-at-23.16.21.png', thumb: 'http://kartoza.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-13-at-23.16.21-150x150.png', permalink: '<div class="galleria-layeritem"><a title="Permalink" href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/#306"><div class="galleria-link-bookmark"></div></a></div>', layer: '<div class="galleria-infolayer"><div class="galleria-layeritem" style="padding-right: 20px;"><h1>Screen Shot 2015-04-13 at 23.16.21</h1></div><div class="galleria-layeritem"><a title="Permalink" href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/#306"><div class="galleria-link-bookmark"></div></a></div><div class="galleria-layeritem" style="padding-right: 20px;"></div>'},
+{id: 304, image: 'http://kartoza.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-13-at-23.52.21.png', thumb: 'http://kartoza.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-13-at-23.52.21-150x150.png', permalink: '<div class="galleria-layeritem"><a title="Permalink" href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/#304"><div class="galleria-link-bookmark"></div></a></div>', layer: '<div class="galleria-infolayer"><div class="galleria-layeritem" style="padding-right: 20px;"><h1>Screen Shot 2015-04-13 at 23.52.21</h1></div><div class="galleria-layeritem"><a title="Permalink" href="http://kartoza.com/how-to-run-a-linux-gui-application-on-osx-using-docker/#304"><div class="galleria-link-bookmark"></div></a></div><div class="galleria-layeritem" style="padding-right: 20px;"></div>'}
+],
+fsg_post_297: [
+{id: 298, image: 'http://kartoza.com/wp-content/uploads/2015/04/docker-logo-370x290.jpg', thumb: 'http://kartoza.com/wp-content/uploads/2015/04/docker-logo-370x290-150x150.jpg', permalink: '<div class="galleria-layeritem"><a title="Permalink" href="http://kartoza.com/7-tips-for-making-productive-use-of-docker/#298"><div class="galleria-link-bookmark"></div></a></div>', layer: '<div class="galleria-infolayer"><div class="galleria-layeritem" style="padding-right: 20px;"><h1>docker-logo-370x290</h1></div><div class="galleria-layeritem"><a title="Permalink" href="http://kartoza.com/7-tips-for-making-productive-use-of-docker/#298"><div class="galleria-link-bookmark"></div></a></div><div class="galleria-layeritem" style="padding-right: 20px;"></div>'}
+],
+fsg_post_278: [
+{id: 283, image: 'http://kartoza.com/wp-content/uploads/2015/03/QGIS-74ac7f0-raster_to_xyz_171.png', thumb: 'http://kartoza.com/wp-content/uploads/2015/03/QGIS-74ac7f0-raster_to_xyz_171-150x150.png', permalink: '<div class="galleria-layeritem"><a title="Permalink" href="http://kartoza.com/generating-an-xyz-ascii-file-from-a-qgis-raster/#283"><div class="galleria-link-bookmark"></div></a></div>', layer: '<div class="galleria-infolayer"><div class="galleria-layeritem" style="padding-right: 20px;"><h1>QGIS 74ac7f0 - raster_to_xyz_171</h1></div><div class="galleria-layeritem"><a title="Permalink" href="http://kartoza.com/generating-an-xyz-ascii-file-from-a-qgis-raster/#283"><div class="galleria-link-bookmark"></div></a></div><div class="galleria-layeritem" style="padding-right: 20px;"></div>'}
+],
+fsg_post_235: [
+{id: 242, image: 'http://kartoza.com/wp-content/uploads/2015/02/IMG-20150206-WA0000.jpg', thumb: 'http://kartoza.com/wp-content/uploads/2015/02/IMG-20150206-WA0000-150x150.jpg', permalink: '<div class="galleria-layeritem"><a title="Permalink" href="http://kartoza.com/qgis-course-at-afqua/#242"><div class="galleria-link-bookmark"></div></a></div>', layer: '<div class="galleria-infolayer"><div class="galleria-layeritem" style="padding-right: 20px;"><h1>Kartoza QGIS class at AfQUA 2015</h1></div><div class="galleria-layeritem"><a title="Permalink" href="http://kartoza.com/qgis-course-at-afqua/#242"><div class="galleria-link-bookmark"></div></a></div><div class="galleria-layeritem" style="padding-right: 20px;"></div>'},
+{id: 243, image: 'http://kartoza.com/wp-content/uploads/2015/02/IMG-20150206-WA0001.jpg', thumb: 'http://kartoza.com/wp-content/uploads/2015/02/IMG-20150206-WA0001-150x150.jpg', permalink: '<div class="galleria-layeritem"><a title="Permalink" href="http://kartoza.com/qgis-course-at-afqua/#243"><div class="galleria-link-bookmark"></div></a></div>', layer: '<div class="galleria-infolayer"><div class="galleria-layeritem" style="padding-right: 20px;"><h1>Admire presenting QGIS workshop at AfQUA</h1></div><div class="galleria-layeritem"><a title="Permalink" href="http://kartoza.com/qgis-course-at-afqua/#243"><div class="galleria-link-bookmark"></div></a></div><div class="galleria-layeritem" style="padding-right: 20px;"></div>'}
+],
+fsg_post_218: [
+{id: 219, image: 'http://kartoza.com/wp-content/uploads/2015/01/show_project.py_001.png', thumb: 'http://kartoza.com/wp-content/uploads/2015/01/show_project.py_001-150x150.png', permalink: '<div class="galleria-layeritem"><a title="Permalink" href="http://kartoza.com/how-to-load-a-qgis-project-in-python/#219"><div class="galleria-link-bookmark"></div></a></div>', layer: '<div class="galleria-infolayer"><div class="galleria-layeritem" style="padding-right: 20px;"><h1>show_project.py_001</h1></div><div class="galleria-layeritem"><a title="Permalink" href="http://kartoza.com/how-to-load-a-qgis-project-in-python/#219"><div class="galleria-link-bookmark"></div></a></div><div class="galleria-layeritem" style="padding-right: 20px;"></div>'}
+]
+};
+</script><!-- YouTube Channel 3 --><script type="text/javascript">jQuery(document).ready(function($){$('.ytc-lightbox').magnificPopupAU({disableOn:700,type:'iframe',mainClass:'mfp-fade',removalDelay:160,preloader:false,fixedContentPos:false});});</script>	<div style="display:none">
+	<div class="grofile-hash-map-e3fa353ba119b9f627f48c4aeb3e255e">
+	</div>
+	<div class="grofile-hash-map-95d16ce05e08bacbe875e7b2e0624a44">
+	</div>
+	<div class="grofile-hash-map-3fef66db37b0d0cc9b57f0033e4bc91d">
+	</div>
+	</div>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"http:\/\/kartoza.com\/report-back-on-the-first-qgis-user-conference-in-nodebo-denmark\/":319,"http:\/\/kartoza.com\/how-to-run-a-linux-gui-application-on-osx-using-docker\/":301,"http:\/\/kartoza.com\/7-tips-for-making-productive-use-of-docker\/":297,"http:\/\/kartoza.com\/generating-an-xyz-ascii-file-from-a-qgis-raster\/":278,"http:\/\/kartoza.com\/how-to-create-a-qgis-pdf-report-with-a-few-lines-of-python\/":274,"http:\/\/kartoza.com\/alternatives-to-google-maps-engine\/":254,"http:\/\/kartoza.com\/opening-for-gis-generalist-spatial-it-engineer-at-kartoza\/":251,"http:\/\/kartoza.com\/opening-for-python-developer-at-kartoza\/":247,"http:\/\/kartoza.com\/qgis-course-at-afqua\/":235,"http:\/\/kartoza.com\/how-to-load-a-qgis-project-in-python\/":218};
+		window.WPCOM_jetpack = true;
+				window.WPCOM_site_ID = 84608437;
+			</script>
+		<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-tumblr' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtumblr', 'menubar=1,resizable=1,width=450,height=450' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-linkedin' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+		});
+		</script>
+							<script type="text/javascript">
+			jQuery(document).on('ready', function(){
+				jQuery('body').on('click', 'a.share-pinterest', function(e){
+					e.preventDefault();
+
+					// Load Pinterest Bookmarklet code
+					var s = document.createElement("script");
+					s.type = "text/javascript";
+					s.src = window.location.protocol + "//assets.pinterest.com/js/pinmarklet.js?r=" + ( Math.random() * 99999999 );
+					var x = document.getElementsByTagName("script")[0];
+					x.parentNode.insertBefore(s, x);
+
+					// Trigger Stats
+					var s = document.createElement("script");
+					s.type = "text/javascript";
+					s.src = this + ( this.toString().indexOf( '?' ) ? '&' : '?' ) + 'js_only=1';
+					var x = document.getElementsByTagName("script")[0];
+					x.parentNode.insertBefore(s, x);
+				});
+			});
+			</script>
+			
+<script type="text/javascript">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Kartoza _ Open Source Geospatial Solutions_files/sharing.js"></script>
+<script type="text/javascript" src="./Kartoza _ Open Source Geospatial Solutions_files/e-201608.js" async="" defer=""></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.5.3',blog:'84608437',post:'0',tz:'2',srv:'kartoza.com'} ]);
+	_stq.push([ 'clickTrackerInit', '84608437', '0' ]);
+</script>
+	
+
+<div id="sharing_email" style="display: none;">
+		<form action="http://kartoza.com/" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="email" name="target_email" id="target_email" value="">
+
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name" value="">
+
+				<label for="source_email">Your Email Address</label>
+				<input type="email" name="source_email" id="source_email" value="">
+
+						<input type="text" id="jetpack-source_f_name" name="source_f_name" class="input" value="" size="25" autocomplete="off">
+			<script> document.getElementById('jetpack-source_f_name').value = ''; </script>
+			
+			<img style="float: right; display: none" class="loading" src="./Kartoza _ Open Source Geospatial Solutions_files/loading.gif" alt="loading" width="16" height="16" scale="0">
+			<input type="submit" value="Send Email" class="sharing_send">
+			<a rel="nofollow" href="http://kartoza.com/#cancel" class="sharing_cancel">Cancel</a>
+
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div><img src="./Kartoza _ Open Source Geospatial Solutions_files/g.gif" id="wpstats" scale="0"><iframe name="oauth2relay312052784" id="oauth2relay312052784" src="./Kartoza _ Open Source Geospatial Solutions_files/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body></html>
